@@ -1,17 +1,22 @@
 {
-	"editor.formatOnSave": true,
-	"[markdown]": {
-		"editor.wordWrap": "on",
-		"editor.codeActionsOnSave": {
-			"source.fixAll.markdownlint": "explicit"
-		}
-	},
-	"prettier.documentSelectors": ["**/*.astro"],
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"astro", // Enable .astro
-		"typescript", // Enable .ts
-		"typescriptreact"
-	]
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit"
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact"
+  ]
 }
