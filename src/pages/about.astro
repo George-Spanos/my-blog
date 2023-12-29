@@ -1,8 +1,5 @@
 ---
-import { Image } from "astro:assets";
-
 import PageLayout from "@/layouts/Base";
-import aboutImg from "@/assets/about-astro.png";
 
 const meta = {
 	title: "About",
@@ -11,38 +8,75 @@ const meta = {
 ---
 
 <PageLayout meta={meta}>
-	<div class="space-y-6">
+	<article class="space-y-6">
 		<h1 class="title">About</h1>
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
+			Software Engineer with some 8 years of experience recently started my own <a
+				href="https://moby-it.com"
+				class="text-accent"
+				target="_blank">venture.</a
+			>
 		</p>
-		<div class="flex justify-center">
-			<Image
-				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				loading="eager"
-				fetchpriority="high"
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
 		<p>
-			Clone or fork my <a
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository">repo</a
-			> if you like me!
+			People typically consider me a loud person. Especially when I talk about things I'm excited
+			about. Nevertheless, when writing I try to be as consise as possible. Growing up I've found
+			myself apprieciating more and more when text tries to nudges me to think rather than screaming
+			about it. This page hopefully has the most words of this blog.
 		</p>
-	</div>
+		<p>
+			I was typically one of the "math kids" of any class growing up. I remember joking with my mom
+			about doing a break when studying for school; I was saying:
+			<blockquote>- "I'm gonna take a break and do some math if that's ok."</blockquote>
+			<blockquote>- "No problem!", she was saying, happily</blockquote>
+			<br />
+			 Having solid foundations, High school was a nice experience and I managed to score quite well
+			in the exams. In 2011 I started studying Applied Mathematics and Physics at National Technical
+			University of Athens (NTUA). I really wanted to study at NTUA. As a math kid I felt that that
+			was the place and engineering was something that grew on the family.
+		</p>
+		<p>
+			It was tough keeping up with NTUA. NTUA is usually more than a full time job if you want to
+			finish your studies within 6 years and I did not have the luxury to not have a job while
+			growing up. My primary side income was teaching. I've beeen teaching math and physics to early
+			high school kids for about 8 years. It was always a delightful experience and I think I was
+			pretty good at it.<em> Teaching shaped the way that I think.</em>
+		</p>
+		<p>
+			But teaching was not enough of an income and I could not stand working at another cafe. Then a
+			friend of mine told me "Hey, this WordPress thing sounds useful and I think you'd like it.".
+			Next thing I new I started creating ugly websites and making some side income. But it was not
+			enough for me. When I wrote my first lines of code I just wanted more. And above all, I wanted
+			to understand deeply what I was doing.
+		</p>
+		<p>
+			After that point I've simply never stopped learning about software. 2 years in I was creating
+			websites for US start ups and finally decided that I wanted to work for a Software Company,
+			just for the sake of learning more.
+		</p>
+		<p>
+			7 years after landing that job and I still love software even more. I love the creativity of
+			it, while still having the opportunity to create things that you are useful and you can
+			actually experience digitally.
+		</p>
+		<br />
+		<br />
+		<p>
+			While I've worked primarily on the Front End, I consider myself a Web Programmer. I have deep
+			afinity for the web as a platform, trying to learn all it's neatpicks and always staying up to
+			date. I also consider myself more of a generalist. I always enjoy learning horizontally rather
+			than vertically and this has given me the ability to understand a plethora of software
+			domains.
+		</p>
+		<p>
+			Nowdays I try to bootstrap my own Software Company, <a
+				class="text-accent"
+				href="https://moby-it.com"
+				target="_blank">Moby IT</a
+			>. Moby is the result of me trying to break free of the boundaries that older company
+			strucutres bring to software, trying to deliver what I call meaningful and concise software. I
+			really like the word concise. We live in a world where much of software is bloated and people
+			try to generalize and centralize everything. I believe that personalized solutions are cheaper
+			and more effective than generalized ones and this is more often than people think.
+		</p>
+	</article>
 </PageLayout>
