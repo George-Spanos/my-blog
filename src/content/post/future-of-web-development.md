@@ -1,24 +1,43 @@
 ---
-title: State of Front End
-description: Late year Front End Review and thought for the future
-publishDate: 29 December 2023
-draft: true
+title: 2024 - State of Web Development
+description: Speculating on the Future of Web Development and Hope for the Future.
+publishDate: 4 January 2023
 ---
 
-# Future of Web Development
+> Remember when we used to spend all our days writing Forms and Tables for CRUD APIs? Boy, what a waste that was. Thank God that is auto-generated and we're able to give our time doing "x" which is "clearly more important".
+>
+> _John Ntevh, Software Engineer, 2030_
 
-In my opinion, web development, and Front-End in particular, has been having an identity crisis for the last 10-13 years. Frameworks as well as patterns come and go, and while most of us are still trying to catch up, the tide seems to constantly rise.
+Web development, and Front-End, in particular, has been having an identity crisis for at least 10 years. Frameworks as well as patterns come and go, and while most of us are still trying to catch up, the tide seems to constantly rise.
 
-I'm not going to correlate tech stacks in this article or try to guess which framework is going to survive. My gut call is that **no framework** is going to and I'll explain why.
+I'm not going to compare tech stacks in this article or try to guess which framework is going to survive simply because I believe that **no framework** is going to and I'll explain why. #let_the_man_cook
 
 ## Speculating
 
-Thinking about what is technology and what I've been doing for the last 6-7 years I've been feeling quite negative about the future. I speculate that layoffs will not stop and the need for web developers **will slowly decline up to 80-90% of what's in demand today up until 2030**. I know it's a bold statement, hear me out.
+Layoffs will not stop and the need for web developers as we know them today **will slowly decline up to 80-90% of what's in currently demand until 2030**. And here's my reasoning behind this:
 
-Most of us web developers are requested to create CRUD APIs that read/write to databases and Forms/Tables for submitting/reading data from those sources. And, to be honest, I don't think these things _are that much complex anymore_. These are issues thousands of developers are solving the same issues in parallel as we speak, with little to no deviation in terms of requirements. Yes, the schema of the data changes and the interactions in a Front End app might change, but the essence of reading and writing data has been mostly the same since the 90s. Furthermore, considering how technology usually evolves in any society, repetitive tasks that many people do in parallel tend to be the ones that technology tends to erase as time progresses. This of course has to do with AI, since it seems that is the piece of technology that's going to change how we interact in the upcoming years. I'm not saying that AI will come for our jobs. I'm saying that whether AI does come or not, I think it's highly unlikely that web development requirements will stay in the above form - Forms, Tables, Databases and CRUD APIs.
+From my experience, the vast majority of us web developers are requested to create CRUD APIs that read/write to databases and Forms/Tables for submitting/reading data from those sources.
+
+To be frank, I don't think these things _are that much complex anymore_. These are issues thousands of developers are solving the same issues in parallel as we speak, with little to no deviation in terms of requirements. _Yes_, the schema of the data changes and _yes_, the interactions in a Front End app might change, but the essence of reading and writing data has been mostly the same since the 90s.
+
+Now considering how **technology usually evolves in society**, those kinds of repetitive tasks are quite certainly the ones that tend to get automated as time progresses. It's simply a matter of time before we solve ~90% of the CRUD issue with a simple UI for ~80% of what any business needs. As you're not required to be an engineer to drive a car, you will not be required to be a programmer to create simple CRUD apps with a pleasant-to-use UI.
+
+_The numbers in the example are indicative._
+
+To a certain degree, this of course has to do with AI. It seems that this is the piece of technology that's going to change how we interact with each other in the upcoming years.
+I'm not saying that AI will come for our jobs. I'm saying that whether AI does come or not, I think it's highly unlikely that your typical web development requirements will stay in the above form - Forms, Tables, Databases and CRUD APIs.
 
 ## Hope for the future
 
-I'm not advising anyone to change their field of study or abandon web development as a career path. I think this advice is absurd. To back this up I'm also doing web development boot camps for people that have no idea what web development is and want to pick it up as a career.
-I'm advising anyone to build upon strong foundations and challenge themselves constantly from both technical and communication standpoints.
-When in doubt, return to the basics. The web will need that know the platform and not simply _some tooling_.
+I'm not advising anyone to change their field of study or abandon web development as a career path. I think that would be absurd. To back this up, I'm also doing web development boot camps for people who have no idea what web development is and want to pick it up as a career, for free.
+
+What I'm advising though is to build upon strong foundations and constantly challenge yourselves from both technical and communication standpoints.
+_"Be ready to jump on the next train"_ as my first Software Director once said. _"The train will come, make sure to be well-equipped to jump on"._
+
+I don't know exactly what web development will be in about 7-10 years, but I'm sure it will be around in one form or another.
+
+When in doubt, return to the basics.
+
+George Spanos
+
+Moby IT
