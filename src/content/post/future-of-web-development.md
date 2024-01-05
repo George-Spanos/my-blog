@@ -19,7 +19,7 @@ I feel that Layoffs will not stop for quite some time. Eventually, the need for 
 
 My biggest assumption is that, at least from my experience, the vast majority of us web developers are requested to create CRUD APIs that read/write to databases and Forms/Tables for submitting/reading data from those sources. And, to be frank, I don't think these things _are that much complex anymore_.
 
-These are issues thousands of developers are solving the same issues in parallel as we speak, with little to no deviation in terms of requirements. _Yes_, the schema of the data changes and _yes_, the interactions in a Front End app might change, but the essence of reading and writing data has been mostly the same since the 90s.
+These are issues thousands of developers are solving in parallel as we speak, with little to no deviation in terms of requirements. _Yes_, the schema of the data changes and _yes_, the interactions in a Front End app might change, but the essence of reading and writing data has been mostly the same since the 90s.
 
 Now considering how **technology usually evolves in society**, those kinds of repetitive tasks are quite certainly the ones that tend to get automated as time progresses. It's simply a matter of time before we solve ~90% of the CRUD issue with a simple UI for ~80% of what any business needs. As you're not required to be an engineer to drive a car, you will not be required to be a programmer to create simple CRUD apps with a pleasant-to-use UI.
 
