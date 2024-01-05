@@ -1,12 +1,11 @@
 ---
-import type { SiteMeta } from "@/types";
 import BaseHead from "@/components/BaseHead";
-import ThemeProvider from "@/components/ThemeProvider";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/SkipLink";
+import ThemeProvider from "@/components/ThemeProvider";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import { siteConfig } from "@/site-config";
-import { GoogleAnalytics } from "astro-google-analytics";
+import type { SiteMeta } from "@/types";
 
 interface Props {
 	meta: SiteMeta;
