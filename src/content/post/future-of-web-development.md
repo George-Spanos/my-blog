@@ -40,5 +40,3 @@ I don't know exactly what web development will be in about 7-10 years, but I'm s
 When in doubt, return to the basics.
 
 George Spanos
-
-Moby IT

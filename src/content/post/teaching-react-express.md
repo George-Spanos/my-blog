@@ -1,7 +1,7 @@
 ---
 title: Teaching React and Express - One-year review
 description: Personal retrospect on teaching React and Express to people with no programming background.
-publishDate: 1 January 2024
+publishDate: 14 January 2024
 tags: ["bootcamp", "react", "express", "web-dev"]
 draft: true
 ---
@@ -86,3 +86,5 @@ A well-rounded engineer has familiarity with many tools and specialization in a 
 > you're as good as the tools you use
 
 Let me know what you think
+
+George Spanos
