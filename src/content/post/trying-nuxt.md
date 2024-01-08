@@ -14,7 +14,7 @@ I also do not have any experience in meta-frameworks. To this day, I do not exac
 
 ## Exploring Alternatives
 
-I feel Angular is too complex for its good. I think designing Front Ends reactively is extremely helpful, but it's a choice you have to consciously make and not abide by because your tool says so.
+I feel Angular is too complex for its own good. I think designing Front Ends reactively is extremely helpful, but it's a choice you have to consciously make and not abide by because your tool says so.
 
 I like the simplicity and straightforwardness of other frameworks like React and Solid.
 
