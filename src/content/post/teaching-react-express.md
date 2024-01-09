@@ -9,9 +9,10 @@ draft: true
 ## Foreword
 
 Even though teaching was never my primary job, I've been teaching for 12 years. It was my primary income as a student and it was the only job I managed to do as a student without hating myself. Others included working at cafes, phone sales, tech support, you name it.
+
 In 2015, I decided that I was going to pursue programming as a career. After a couple of years, teaching came back naturally. I studied math, so programming was not new to me, but it was something I had to teach myself to get to a professional level.
 
-So, essentially, I was the first person to teach programming. The learning path was there. It was personalized, but it was there.
+So, essentially, the first person I taught how to program was _myself_. The learning path was there. It was personalized, but it was there.
 
 Over the following years, many people reached out, asking how I managed to break into the market. I remember helping quite a bunch of people - some needing help with job assessments, others to build up a stronger feel for a specific tool, and some even struggling to grasp some of the math behind programming. I remember one who ended up meeting me in Greece and bought me a present because I helped him get a job, which still makes me proud and grateful.
 
