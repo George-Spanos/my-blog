@@ -7,7 +7,7 @@ tags: ["react", "express", "web-dev", "learning"]
 
 ## Foreword
 
-Even though teaching was never my primary job, I've been doing it for about 12 years. It was my primary income as a student and it was the only job I managed to do as a student without hating myself. Others included working at cafes, phone sales, tech support, you name it.
+Even though teaching was never my primary job, I've been doing it for about 12 years. It was my primary income as a student and the only job I managed to do as a student without hating myself (others included working at cafes, phone sales, tech support, you name it).
 
 In 2015, I decided that I was going to pursue programming as a career. After a couple of years, teaching came back naturally. I studied math, so programming was not new to me, but it was something I had to teach myself to get to a professional level.
 
@@ -23,7 +23,7 @@ After doing this for quite some time I decided to give it some structure. I thou
 
 That was not me trying to monetize this. I don't think it's at that state yet.
 
-But since I was doing it, I thought I might as well do it and give my best.
+But since I was doing it, I thought I might as well do it correctly.
 
 The goal is to help people:
 
@@ -51,7 +51,7 @@ This is not an exhaustive list as I'm not giving enough intel on each bullet, bu
 
 ## 1st step: Spending time with the DOM API
 
-I believe this is something all front-end developers should do at some point. The DOM API is, probably and simultaneously, the best and worst thing about the browser. It's good, considering the beautiful things we've managed to build upon it. It's bad because we needed so many tools on top of the native ones in the first place.
+I believe this is something all front-end developers should do at some point. The DOM API is probably the best and worst thing about the browser, simultaneously. It's good, considering the beautiful things we've managed to build upon it. It's bad because we needed so many tools on top of the native ones in the first place.
 
 Assuming they are familiar with what an API is, **people typically respond nicely when taught about the DOM API**. It's a straightforward process. The API has meaningful function names and the behavior is pretty predictable if you know how the browser works. They also seem to have fun messing with HTML via JavaScript.
 
@@ -63,13 +63,9 @@ Now jumping from the DOM API to React is usually pretty rough. Even though we tr
 
 > Student A
 
-These are reasonable questions that I also had back then. The best answer is to dive into the actual implementation of `useState` in that case. **It's important to understand that code is code and there's no magic at the end of the day. It's just a bunch of code.**
+These are reasonable questions that I also had back then. The best answer is to dive into the actual implementation of `useState` in that case. **It's important to understand that code is code and there's no magic at the end of the day. It's just a bunch of code.** But it's not an easy task considering that we live in a world where `.d.ts` files are a thing. But I will now take a deep breath, control my urges and not go into full whine mode. Maybe another time.
 
-> If only we lived in a world where I could `Go To Definition` and read the actual implementation of `useState`
->
-> Intro for another article
-
-However, students typically don't feel good when hearing/finding the answers to those kinds of questions. People seem **baffled** by the complexity. It does not come naturally to them.
+The problem is that, even after finding the right answers, students typically don't feel good when hearing/finding the answers to those kinds of questions. People seem **baffled** by the complexity. It does not come naturally to them.
 
 What I'm trying to come down to is that, even while I believe that React as a library and paradigm **certainly** has benefits to offer, I dislike the fact that it's tough to convey. This certainly reveals a lot about the state of modern web development. After walking through mud for somewhat 10 years, most of us have forgotten how it was to walk on concrete. Trying to teach the "standards" to new people is always a good reality check.
 
@@ -98,7 +94,7 @@ The above data has been bringing questions to my mind constantly.
 
 > Is the frontend ecosystem too complex right now? Have we overdone it maybe? Do we always need a SPA? Did we forget that there's a difference maybe between a website and a web app? How could we improve the learning experience?
 
-I've come to believe that in your typical web app out there, the kind of what most developers work on, the frontend is more complex than the backend. Both in terms of tooling and requirements. Backend complexity typically relates to **data complexity and/or business problem complexity**. On the other hand, frontend complexity is mostly user-driven rather than data-driven. I've discovered that user interaction issues tend to be more complex and less intuitive than data processing. Data is more deterministic. User behavior is not.
+I've come to believe that in your typical web app out there, the kind of what most developers work on, the frontend is more complex than the backend. Both in terms of tooling and requirements. Backend complexity typically relates to **data complexity and/or business complexity**. On the other hand, frontend complexity is mostly user-driven rather than data-driven. I've discovered that user interaction issues tend to be more complex and less intuitive than data processing. Data is more deterministic. User behavior is not.
 
 _Take the above statement with a grain of salt as it comes from my own biased experience, but this is what I've seen in my 9 years being around._
 
