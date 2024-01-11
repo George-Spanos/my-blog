@@ -2,7 +2,7 @@
 title: Trying out Vue/Nuxt - Impressions on my first meta-framework
 description: Impressions and thoughts after trying Nuxt and Vue after 8 years of Angular development.
 publishDate: 4 January 2024
-tags: ["vue", "nuxt", "learning", "angular"]
+tags: ["vuejs", "nuxt", "learning", "angular"]
 ---
 
 ## Working with Angular
