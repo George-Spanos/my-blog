@@ -1,6 +1,6 @@
 ---
 title: Teaching React and Express - One-year review
-description: Personal retrospect on teaching React and Express to people with no programming background.
+description: One year retrospect on teaching React and Express to people with no programming background.
 publishDate: 10 January 2024
 tags: ["react", "express", "web-dev", "learning"]
 ---

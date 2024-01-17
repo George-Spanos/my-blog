@@ -2,7 +2,7 @@
 title: 2024 - State of Web Development
 description: Speculating on the Future of Web Development and Hope for the Future.
 publishDate: 1 January 2024
-tags: ["web-dev", "AI", "market-speculation"]
+tags: ["web-dev", "AI", "speculation"]
 ---
 
 > Remember when we used to spend all our days writing Forms and Tables for CRUD APIs? Boy, what a waste that was. Thank God that is auto-generated and we're able to give our time doing "x" which is "clearly more important".
