@@ -2,7 +2,7 @@
 title: Trying out Vue/Nuxt - Impressions on my first meta-framework
 description: Impressions and thoughts after trying Nuxt and Vue after 8 years of Angular development.
 publishDate: 4 January 2024
-tags: ["vuejs", "nuxt", "learning", "angular","web dev"]
+tags: ["vuejs", "nuxt", "learning", "angular", "web dev"]
 ---
 
 ## Working with Angular
@@ -71,4 +71,6 @@ The developer experience is simply amazing to the point in which I believe peopl
 
 While I don't agree with all that [Theo](https://twitter.com/t3dotgg?lang=en) says, I think there's merit to his thesis when he speaks about modern tools, platforms and developer productivity.
 
-George Spanos
+George Spanos,
+
+[Moby IT](https://moby-it.com/)
