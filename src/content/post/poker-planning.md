@@ -1,13 +1,13 @@
 ---
 title: Developing a Poker Planning app
-description: Challenges while developing a Scrum Poker Planning with multiple tech stacks.
+description: Exploring the challenges encountered during the development of a Scrum Poker Planning app utilizing diverse technology stacks.
 publishDate: 21 January 2024
 tags: ["golang", "solidjs", "web dev", "poker planning", "scrum poker planning"]
 ---
 
 ## Problem Space
 
-While I was working as a front-end architect last year, we started working with story points and therefore we came up with a need for a poker planning app. I don't particularly find this method useful, but the team decides that the team decides sometimes.
+While I was working as a front-end architect last year, we started working with story points and therefore we came up with a need for a poker planning app. I don't particularly find this method useful, but sometimes, team decisions prevail, even if one might not find the method particularly useful.
 
 > For anyone not familiar, Planning Poker, also called “Scrum Poker,” is a consensus-based Agile planning and estimating technique used to assess product backlogs, guessing how much time and effort is needed to complete each of the backlog’s initiatives. You can read more about it [here](https://www.simplilearn.com/what-is-planning-poker-article#what_is_planning_poker).
 
@@ -17,7 +17,7 @@ We searched for apps online but most of them did not seem UX-friendly enough for
 
 For new projects that have a certain scope, I almost always grab this chance to mess with new technologies. I've been writing Go for at least 18 months at this point and thought that this could be a good project to play with some concurrency and WebSockets programming.
 
-Regarding the UI layer, I was **considerably more conflicted**. I was through a phase in which I felt that most front-end tooling was too complex for most of the tasks that I usually require. I still feel that, on a relatively lighter scale. For the sake of comparison, I decided to re-implement the UI with multiple technologies. Tools that I used included:
+Regarding the UI layer, I was **considerably more conflicted**. I went through a phase where I found most front-end tools unnecessarily complex for my usual tasks. I still feel that, on a relatively lighter scale. For the sake of comparison, I decided to re-implement the UI with multiple technologies. Tools that I used included:
 
 - React
 - **SolidJS**
@@ -33,14 +33,14 @@ With most of them, I did not go all the way to the end. I reached a point in whi
 
 The problem is generally straightforward. A user has a username and can create a Room, in which people can join and vote. Votes come in the form of numbers. There is a synchronization issue within each Room, as each voter needs to vote before the revealing is available. This means that there are different Room States and User Vote states.
 
-What I discovered to be the most challenging part of this problem is the consistency of connections. WebSockets tend to close in quite sensitive ways in Modern Browsers. To name a few, one of them being that a user is alt-tabbed, or even when there is no mouse movement for about 20 seconds or more. These issues are primarily browser restrictions for security and resource-saving, that the app has to foresee to be stable. We need to implement appropriate ping-pong messages for keeping the connection alive, while always trying to reconnect when the socket closes, to cover all inconsistencies between how different browsers handle WebSockets. There's also the behavior of Poker Round Readiness after a user disconnects and does/doesn't reconnect.
+What I discovered to be the most challenging part of this problem is the consistency of connections. WebSockets tend to close in quite sensitive ways in Modern Browsers. To name a few, one of them being that a user is alt-tabbed, or even when there is no mouse movement for about 20 seconds or more. These issues are primarily browser restrictions for security and resource-saving, that the app has to foresee to be stable. We need to implement appropriate ping-pong messages for keeping the connection alive, while always trying to reconnect when the socket closes, to cover all inconsistencies between how different browsers handle WebSockets. There's also managing Poker Round readiness when a user disconnects and whether or not they reconnect
 
 ## Server-Side remarks
 
 This was another one of those wonderful times when picking Go led me to learn more about the underlying platform rather than simply exploring this specific problem. This, to me, always feels amazing. I used the [gorilla/websocket](https://github.com/gorilla/websocket) library and just by reading the code and the official [WebSocket specification](https://datatracker.ietf.org/doc/html/rfc6455), I learned so much about what a WebSocket connection actually is. I've written 3-4 chat clients and servers and yet I learned more about WebSockets through this project.
 
 - I learned that the nature of a TCP connection is not to close by default, even though this is how we've learned that HTTP works.
-- TCP connections terminate explicitly. In the case of HTTP, this explicitness comes from the HTTProtocol rather than the nature of the connection.
+- TCP connections terminate explicitly. In the case of HTTP, this explicitness comes from the HTTP Protocol rather than the nature of the connection.
 - The WebSocket connection is essentially an HTTP connection that gets "upgraded" through a specific header. This indicates to the server that this connection should stay open and receive incoming messages with a specific format, which is described in the WebSocket Protocol.
 - The connection is done over TCP ports 443 or 80 and its goal is to enable a two-way communication between server and client.
 
@@ -50,7 +50,7 @@ While I knew most of this, I lacked some specifics that made my understanding of
 
 ### SolidJS
 
-SolidJS ended up beating every tool in terms of simplicity. The next one for me would be VanillaJS, but there's a considerable margin present, simply because of the ease of development. There's still just too much boilerplate and imperative programming you have to go through, when you're trying to do almost anything with VanillaJS. On the contrary, SolidJS gave me access to the declarative concepts of React, while still staying as close to the platform as possible.
+In terms of development simplicity, SolidJS ended up beating every tool. The next one for me would be VanillaJS, but there's a considerable margin present, simply because of the ease of development. There's still just too much boilerplate and imperative programming you have to go through, when you're trying to do almost anything with VanillaJS. On the contrary, SolidJS gave me access to the declarative concepts of React, while still staying as close to the platform as possible.
 
 > Thank you, [Ryan](https://twitter.com/RyanCarniato) and the [SolidJS contributors](https://github.com/solidjs/solid/graphs/contributors) for the amazing work.
 
@@ -77,7 +77,6 @@ After implementing the UI almost 4 times, it got quite boring, which is a good t
 My takeaways are:
 
 1.  WebSockets problems need quite some testing to get right.
-    George Spanos,
 2.  It feels very good developing apps with SolidJS
 3.  After all these years of ES versions, VanillaJS is still much more cumbersome to deal with than modern Front-End frameworks.
 4.  HTMX is something worth considering for your next project. It shifts attention back to the server in a unique, yet familiar way.
