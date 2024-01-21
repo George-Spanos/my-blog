@@ -2,17 +2,16 @@
 title: Developing a Poker Planning app
 description: Challenges while developing a Scrum Poker Planning with multiple tech stacks.
 publishDate: 21 January 2024
-tags: ["golang", "solidjs", "web dev", "poker planning"]
-draft: true
+tags: ["golang", "solidjs", "web dev", "poker planning", "scrum poker planning"]
 ---
 
 ## Problem Space
 
-While I was working as a front-end architect at a company in the cybersecurity space, we started working with story points and therefore we came up with a need for a poker planning app.
+While I was working as a front-end architect last year, we started working with story points and therefore we came up with a need for a poker planning app. I don't particularly find this method useful, but the team decides that the team decides sometimes.
 
 > For anyone not familiar, Planning Poker, also called “Scrum Poker,” is a consensus-based Agile planning and estimating technique used to assess product backlogs, guessing how much time and effort is needed to complete each of the backlog’s initiatives. You can read more about it [here](https://www.simplilearn.com/what-is-planning-poker-article#what_is_planning_poker).
 
-We searched for apps online but most of them did not seem UX-friendly enough for our standards, and the ones who did, were behind a paywall. The problem seems quite trivial, so I decided to solve it myself and [open-source](https://github.com/moby-it/planning-poker) it.
+We searched for apps online but most of them did not seem UX-friendly enough for our standards, and the ones who did, were behind a paywall. The problem seems quite trivial, so I decided to solve it myself and [open-source](https://github.com/moby-it/planning-poker) it. A live version of the app can be found [here](https://poker-planning.net).
 
 ## The Tech Stack
 
@@ -26,7 +25,7 @@ Regarding the UI layer, I was **considerably more conflicted**. I was through a 
 - VanillaJS
 - HTMX
 
-With most of them, I did not go all the way to the end. I reached a point in which I felt that I did not have to gain much anymore and then either moved to the next one or took a break. You can find more about my implementations [here](https://github.com/moby-it/planning-poker/branches).
+With most of them, I did not go all the way to the end. I reached a point in which I felt that I did not have to gain much anymore and then moved to the next one. You can find more about my implementations [on github](https://github.com/moby-it/planning-poker/branches).
 
 **The current production implementation is done with Golang as a stateful, WebSocket-based backend and the UI is done with SolidJS. There's no database in this project.**
 
@@ -67,10 +66,22 @@ I did not go all the way with HTMX. I managed to receive and send messages throu
 
 I don't have much to say about React. The implementation was relatively straightforward, with the classic nuances of `useEffect`, Memos and Callbacks a React app typically has. Component wise it was very similar to Solid. State-wise, signals inside contexts were much easier to structure and reason about than `useState`.
 
+### Testing
+
+It was quite hard to test this app since the actual UI testing had to be done with multiple browsers open. I managed to do this by spinning up multiple incognito puppeteer sessions and doing some voting on each one. You can find more [here](https://github.com/moby-it/planning-poker/tree/main/e2e).
+
 ## Conclusion
 
-Even though in the end I got tired of re-implementing the same app again, and again, and again, just to mess up with different tools, it's something I would advise anyone to try at some point. When you know the business problem inside-out, you get a particularly clear lens on what each tool is good and not good at, so that you can find what suits your tastes better.
+After implementing the UI almost 4 times, it got quite boring, which is a good thing. It's something I would advise anyone to try at some point. You really get a feel for your tools after removing the business logic complexities and can identify what tastes better quite easily.
 
-George Spanos,
+My takeaways are:
+
+1.  WebSockets problems need quite some testing to get right.
+    George Spanos,
+2.  It feels very good developing apps with SolidJS
+3.  After all these years of ES versions, VanillaJS is still much more cumbersome to deal with than modern Front-End frameworks.
+4.  HTMX is something worth considering for your next project. It shifts attention back to the server in a unique, yet familiar way.
+
+George Spanos
 
 [Moby IT](https://moby-it.com/)
