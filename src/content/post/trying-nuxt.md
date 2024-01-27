@@ -59,7 +59,7 @@ For example:
 Let's assume that a page requires a user list before rendering content. In a Single-Page Application environment, you would typically implement guards and custom loaders just so you fetch the data via client-side JavaScript.
 In a meta-framework environment, you fetch your user list and then populate the HTML. Simple, traditional web behavior.
 
-## Thoughts and feelings about Vue Nuxt
+## Thoughts and feelings about Vue and Nuxt
 
 Even though I'm fairly new to this toolset, I have to say I already feel rejuvenated. I feel that I'm not that far from Native DOM while having the ease of use of the component-based frameworks without the complexity of the tooling.
 
