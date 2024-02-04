@@ -1,7 +1,7 @@
 ---
 title: Facts 1 - You are what you love
 description: Discussing the importance of working alongside your emotions and not against them
-publishDate: 2 February 2024
+publishDate: 4 February 2024
 tags: ["facts", "emotions", "work", "vocation"]
 ---
 
