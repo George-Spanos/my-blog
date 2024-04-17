@@ -40,7 +40,7 @@ The last point is what I would stress to myself. Understanding engineering does 
 Here are some books that have reshaped my way of thinking. This list also includes some to-read:
 
 - [The Mom Test, by Rob Rob Fitzpatrick](https://www.momtestbook.com/)
-- [This is marketing, by Seth Godin](https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830)
+- [This is Marketing, by Seth Godin](https://www.amazon.com/This-Marketing-Cant-Until-Learn/dp/0525540830)
 - [Multipliers, by Liz Wiseman](https://www.amazon.com/Multipliers-Best-Leaders-Everyone-Smarter/dp/0061964395)
 - [Culture Map, by Erin Meyer](https://erinmeyer.com/books/the-culture-map/)
 - [Million Dollar Consulting by Alan Weiss](https://www.amazon.com/Million-Dollar-Consulting-Alan-Weiss/dp/0071622101)
