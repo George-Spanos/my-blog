@@ -1,7 +1,7 @@
 ---
 title: Studying Functional Programming
 description: Thoughts on my second try to learn more about functional programming - what's and why's
-publishDate: 3 JMay 2024
+publishDate: 3 May 2024
 tags: ["functional programming", "fp", "haskell"]
 ---
 
