@@ -61,6 +61,8 @@ I'm already at about 20% of this book and feel that I'm still just tipping my to
 
 I might keep a journal on how this goes and I'm probably going to open source everything that I do.
 
+For anyone reading who has worked with FP, please do contact me. I would like to stay in touch an learn from you, in case you are willing to. You can find me on [linkedin](https://www.linkedin.com/in/george-spanos/) and on [twitter](https://twitter.com/GeorgePesti).
+
 Cheers
 
 George Spanos,
