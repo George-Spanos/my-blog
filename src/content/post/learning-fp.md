@@ -31,7 +31,7 @@ I had a really hard time understanding what was happening with fp-ts and marble.
 
 ## Functional programming - 1st Attempt
 
-I studied for about 2-3 months about FP theory in general, before recalling that I had a course in [NTUA](https://ntua.gr/en/) called Group Theory in which I was introduced to all those ideas. I had of course forgotten almost all of them, so I went ahead and picked up some old books to scrap some of the theory again. At the end I managed to create the web-api for [playpokerodds.com](playpokerodds.com) with marblejs, fp-ts (and io-ts for data validation).
+I studied for about 2-3 months about FP theory in general, before recalling that I had a course in [NTUA](https://ntua.gr/en/) called Group Theory in which I was introduced to all those ideas. I had of course forgotten almost all of them, so I went ahead and picked up some old books to scrap some of the theory again. In the end, I managed to create the web-api for [playpokerodds.com](playpokerodds.com) with marblejs, fp-ts (and io-ts for data validation).
 
 Truth is that I did not feel much of a benefit from having a reactive web-api that works with a request-response model, is completely functional and uses Rxjs. It was flashy, but I didn't feel any benefits. Maybe it was because I was the only one working on this issue that had a rather specific problem space. In the end, I ditched fp-ts and marble for this project and wrote a simple express-with-typescript backend very very fast.
 
@@ -61,7 +61,7 @@ I'm already at about 20% of this book and feel that I'm still just tipping my to
 
 I might keep a journal on how this goes and I'm probably going to open source everything that I do.
 
-For anyone reading who has worked with FP, please do contact me. I would like to stay in touch an learn from you, in case you are willing to. You can find me on [linkedin](https://www.linkedin.com/in/george-spanos/) and on [twitter](https://twitter.com/GeorgePesti).
+For anyone reading who has worked with FP, please do contact me. I would like to stay in touch and learn from you, in case you are willing to. You can find me on [linkedin](https://www.linkedin.com/in/george-spanos/) and [twitter](https://twitter.com/GeorgePesti).
 
 Cheers
 
