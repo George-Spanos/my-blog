@@ -2,7 +2,7 @@
 title: Onto Functional Programming
 description: Thoughts on my second try to learn more about functional programming - what's and why's
 publishDate: 3 May 2024
-tags: ["functional programming", "fp", "haskell"]
+tags: ["functional programming", "fp", "Haskell"]
 ---
 
 ## Why?
@@ -22,7 +22,7 @@ This is why, personally, regarding studying goals, I frame them in a year. For e
 1. UX UI Design
 2. Functional Programming
 
-## My History with Functional programming
+## My History with Functional Programming
 
 This is the 2nd time I have tried to study and understand FP (Functional Programming). My first attempt was 2 years ago when I stumbled upon [marblejs](https://docs.marblejs.com/), _a functional reactive Node.js framework for building server-side applications_. At that time, I was working with [playpokerodds.com](playpokerodds.com) and decided to play with this tool. Marble brought me closer to [fp-ts](https://gcanti.github.io/fp-ts/), _a library to help developers write purely functional programs with Typescript_, which I had never heard of before.
 
