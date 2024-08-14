@@ -50,6 +50,8 @@ This vision can only be realized with the right team.
 
 If you think that you could picture yourself as part of this group, feel free to [contact](mailto:gspanos@moby-it.com) me.
 
+These thoughts are summed up in [Moby's website](https://moby-it.com). Our software service offerings can now be found at <https://services.moby-it.com>
+
 Cheers,
 
 George
