@@ -2,7 +2,7 @@
 title: Facts 1 - You are what you love
 description: Discussing the importance of working alongside your emotions and not against them
 publishDate: 4 February 2024
-tags: ["facts", "emotions", "work", "vocation"]
+tags: ["facts", "work", "vocation"]
 ---
 
 > Facts is a series of articles where I express my foldable opinions. I know, right?
@@ -21,10 +21,10 @@ This belief steers me towards believing that there has to be a clear emotional f
 
 ```typescript
 function ValueOfOutcome(emotionalDrive) {
-	// real life situations modifier
-	const situationsModifier;
-	// Value of Outcome is the result of the Analytical Process of an emotionalDrive times the situationModifier
-	return AnalyticalProcess(emotionalDrive) * situationsModifier;
+ // real life situations modifier
+ const situationsModifier;
+ // Value of Outcome is the result of the Analytical Process of an emotionalDrive times the situationModifier
+ return AnalyticalProcess(emotionalDrive) * situationsModifier;
 }
 ```
 

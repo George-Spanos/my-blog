@@ -2,7 +2,7 @@
 title: Onto Functional Programming - part 3
 description: Review of the Haskell book and next steps trying to learn functional programming
 publishDate: 17 June 2024
-tags: ["functional programming", "fp", "Haskell"]
+tags: ["functional programming", "Haskell"]
 ---
 
 

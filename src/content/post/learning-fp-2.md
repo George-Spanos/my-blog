@@ -2,7 +2,7 @@
 title: Onto Functional Programming - part 2
 description: Progress on my journey for learning Haskell after 20 days in
 publishDate: 19 May 2024
-tags: ["functional programming", "fp", "Haskell"]
+tags: ["functional programming", "Haskell"]
 ---
 
 
@@ -24,7 +24,6 @@ I want to mention also the **incredible** podcast of [Kris Jenkins](https://twit
 3. [Roc - A functional programming language by Richard Feldman](https://www.youtube.com/watch?v=DzhIprQan68)
 4. [Is Gleam your next programming language](https://www.youtube.com/watch?v=RntfkL8lUY4)
 
-
 ## Roadmap
 
 My current roadmap regarding FP is to:
@@ -32,7 +31,6 @@ My current roadmap regarding FP is to:
 1. Finish the Haskell book
 2. Rewrite my chat application, [Boochat](https://github.com/moby-it/boochat-server) - this app used a hybrid approach of event sourcing. I aim to rewrite it with some functional language, probably Haskell, and adjust it into a fully event-sourced model.
 3. Recreate the [web UI of Boochat](https://www.figma.com/proto/2Jl3UG4KZk7r4fXkAQh8ys/Boochat-Lib-1.0?t=wNXdM7tgkEzyTzQT-0&scaling=min-zoom&page-id=0%3A1&node-id=455-2490&starting-point-node-id=455%3A2490). I aim to use [Rescript](https://rescript-lang.org/) with my port for it, using [The Elm Architecture](https://guide.elm-lang.org/architecture/)
-
 
 After I'm done with the above I'm considering to maybe diving into BEAM, probably through [Gleam](https://gleam.run/), which also seems like a very interesting project.
 

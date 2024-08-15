@@ -2,7 +2,7 @@
 title: Zero In
 description: Writing about the importance of being able to narrow down your field of view, from the scope of entrepreneurship marketing and sales
 publishDate: 17 April 2024
-tags: ["entrepreneurship", "branding" ]
+tags: ["entrepreneurship" ]
 ---
 
 ## It's a race
@@ -16,6 +16,7 @@ In terms of getting your business out there, which has been my problem for the l
 These days I'm trying to both narrow down my target audience and my narrative about it. My goal is to **contribute to the creation of a diverse market by delivering hand-crafted, affordable software to small-to-medium enterprises so that they can rival their bigger counterparts**.
 
 To achieve this:
+
 1. I use lean software practices that make no assumptions about business problems. I listen to a problem, design and deliver.
 2. I don't believe that software is always the correct choice. Sometimes a sheet of paper can do the work better.
 3. I have minimized my profit margins, to stay affordable and competitive. Right now, I prefer having fewer clients that make a bigger impact, rather than trying to reach too many people and get lost in the process.
@@ -33,8 +34,6 @@ I typically close my articles with a piece of advice that I would appreciate if 
 2. **Construct a clean and short narrative** so that anyone can understand what you do.
 3. Get the word out - spend your time **connecting with those you can impact the most**.
 
-
 George Spanos
 
 [Moby IT](https://moby-it.com)
-

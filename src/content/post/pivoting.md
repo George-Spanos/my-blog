@@ -2,7 +2,7 @@
 title: Moving away from Enterprise Services
 description: Reflecting on my choice to pivot from providing Software Service to something new
 publishDate: 14 August 2024
-tags: ["entrepreneurship", "moby it","pivoting"]
+tags: ["entrepreneurship", "moby it"]
 ---
 
 TL;DR: Due to the nature of the software services field, I've come to realize it's not a good fit for me as a professional and business owner. I want to explore funding and creating my own products by assembling the right team. I will continue providing software services to maintain financial stability, but it's not my long-term goal.
