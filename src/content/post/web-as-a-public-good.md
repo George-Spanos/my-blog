@@ -5,8 +5,6 @@ publishDate: 18 September 2024
 tags: ["work", "vocation","web"]
 ---
 
-> Facts is a series of articles where I express my foldable opinions. I know, right?
-
 ## Foreword
 
 Blogging is still something new to me. I do enjoy it and quite often find myself wanting to write down things primarily to get them out of my system. However, I find myself having ideas that I keep them as drafts for months, due to "not polishing them enough". I've decided to publish more raw material, potentially in the for of draft thouhgts. I feel that the act of expression is more valuable to me, rather than creating a "clean and polished" blog.
