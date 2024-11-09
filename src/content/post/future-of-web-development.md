@@ -1,6 +1,6 @@
 ---
 title: 2024 - State of Web Development
-description: Speculating on the Future of Web Development and Hope for the Future.
+description: Speculating on the future of web development and hope for the future.
 publishDate: 1 January 2024
 tags: ["web dev", "ai"]
 ---
