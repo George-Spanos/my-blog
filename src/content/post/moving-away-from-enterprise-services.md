@@ -33,7 +33,7 @@ There are certain ingrained patterns in the enterprise software services world, 
 ## If not services then what?
 
 The key word in the previous section is the word _meaning_. I've discovered that, even though I enjoy reading about Information
-Technology and Computer Science, I don't _need_ it for personal fulfillment. What I **do** need is to be part of a team that creates impactful products (digital or physical) with social value. This feeling has been absent for a while.
+Technology and Computer Science, I don't _need_ it for personal fulfillment. What I **do** need is to be part of a team that creates impactful products (digital or physical) with sociocultural value. This feeling has been absent for a while.
 
 So I've started connecting with creatives around me - visual and audio designers, game designers, writers, craftspersons, product ideators etc.
 I've started bringing those people together and we're already working in a couple of products.
@@ -50,7 +50,7 @@ This vision can only be realized with the right team.
 
 If you think that you could picture yourself as part of this group, feel free to [contact](mailto:gspanos@moby-it.com) me.
 
-These thoughts are summed up in [Moby's website](https://moby-it.com). Our software service offerings can now be found at <https://services.moby-it.com>
+These thoughts are summed up in [Moby's website](https://moby-it.com).
 
 Cheers,
 
