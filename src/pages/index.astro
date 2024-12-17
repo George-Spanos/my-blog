@@ -4,7 +4,7 @@ import PostPreview from "@/components/blog/PostPreview";
 import SocialList from "@/components/SocialList";
 import { getAllPosts, sortMDByDate } from "@/utils";
 
-const MAX_POSTS = 20;
+const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 ---
@@ -23,7 +23,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
+		<h2 class="title mb-4 text-xl">Lastest Posts</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
