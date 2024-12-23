@@ -2,7 +2,7 @@
 title: Exploring Game Design - a new endeavor
 description: Sharing thoughts on discovering what game design is and how could a web developer rewire their brain to fit in it.
 publishDate: 13 Nov 2024
-tags: ["game design", "indie","godot"]
+tags: ["game design", "game dev"]
 ---
 
 ## A personal note
@@ -42,14 +42,14 @@ I intent to read most, if not all of them until June 2025. So far everything see
 it's a wonderful brain rewiring, going from something extremely deterministic as is programming to something that's
 a fine art to it's core, game design.
 
-I feel that programming mostly feels like solving puzzles daily. If you're the guy that gets endorphins out of this you're going to have an amazing time. Art feels mostly like an exploration, which is a feeling I've deeply missed, with a whole world of beauties behind it.
+I feel that programming mostly feels like solving puzzles daily. If you're the guy that gets endorphins out of this you're going to have an amazing time.
+Art feels mostly like an exploration, which is a feeling I've deeply missed, with a whole world of beauties behind it.
 
 ## Why Game Design?
 
 I feel that most programmers at some point have dreamed of creating their own game.
 
-In addition to that, I remember feeling conflicted even as a
-kid regarding which career to choose. I did spent more than 10 years in which music was a big part of my life. I've been playing
+In addition to that, I remember feeling conflicted even as a kid regarding which career to choose. I did spent more than 10 years in which music was a big part of my life. I've been playing
 the guitar for about that long, as well as experimenting with other instruments as well. When I approached the time in which
 I had to choose what to study, I felt that I had the choice to either choose music or mathematics, since math was also something I
 had an affinity for. I chose the later which lead to programming. And sadly my relationship with creating music has
