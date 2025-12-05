@@ -11,11 +11,15 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<p class="mb-4">
-			Hello, I'm George Spanos and I work as a programmer and tech lead for the last 10 years. This blog is about me, thinking out loud. Topics usually include software, entrepreneurship
-			and self-reflecting. I need to spend time with all three for the sake of sanity. I also find
-			it hard to stay serious for extended periods of time.
-		</p>
+    <ul>
+      <li>Speciment name: George Spanos</li>
+      <li>Occupation: Programmer</li>
+      <li>Enjoys: music & people</li>
+      <li>Race: Human</li>
+    </ul>
+		<p class="my-4">
+     This blog is about me, thinking out loud. Topics usually include software, entrepreneurship, music and self-reflecting. I need to spend time with all three for the sake of sanity.
+    </p>
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
