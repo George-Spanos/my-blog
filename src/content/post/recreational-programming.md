@@ -1,6 +1,6 @@
 ---
-title: Recreational Programming: C, Assembly, and a Raspberry Pi Zero
-description: Sharing my experience spending time learning programming on bare metal, with the help of AI
+title: Recreational Programming - C, Assembly on Bare Metal
+description: Learning C, assembly, and bare-metal programming from scratch — using AI as a mentor
 publishDate: 13 April 2026
 tags: ["c", "programming", "bare metal", "ai"]
 ---
