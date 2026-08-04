@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_template.html
 
 Sitemap: https://gspanos.tech/sitemap.xml

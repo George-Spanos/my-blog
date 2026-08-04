@@ -88,7 +88,7 @@ a real origin.
 | `sitemap.xml`    | Hand-maintained.                                                        |
 | `feed/`          | Meta-refresh redirect to `/rss.xml`, kept for old subscribers.          |
 | `CNAME`          | The custom domain.                                                      |
-| `.nojekyll`      | Stops GitHub Pages running the files through Jekyll.                    |
+| `.nojekyll`      | Only matters if Pages is ever switched to deploy from a branch; the Actions deploy never runs Jekyll. |
 
 Changing the header, footer, or `<head>` means editing each HTML file — there is no
 templating. That is the trade for having no toolchain. `_template.html` is the

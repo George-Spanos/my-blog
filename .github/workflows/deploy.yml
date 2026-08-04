@@ -1,7 +1,8 @@
 name: Deploy to GitHub Pages
 
 # The site is plain static files, so there is nothing to build — this just
-# uploads the repository as-is and publishes it.
+# uploads the repository as-is and publishes it. Mirrors GitHub's official
+# "Static HTML" starter workflow.
 
 on:
   push:
@@ -13,9 +14,10 @@ permissions:
   pages: write
   id-token: write
 
+# One deployment at a time. Do not cancel a run that is already publishing.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -24,9 +26,19 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/upload-pages-artifact@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Uploads the whole repo. The action excludes .git and .github itself,
+      # and drops top-level dotfiles unless include-hidden-files is set.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .
-      - id: deployment
+
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
