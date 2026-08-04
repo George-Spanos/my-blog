@@ -261,16 +261,28 @@ pre code {
   padding: 0;
 }
 
+/* Narrow screens: date on its own line above the title. Wide screens: two
+   columns, with the date column wide enough for the longest date
+   ("18 September 2024") so every title starts at the same x. */
 .post-list li {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0 0.75rem;
+  flex-direction: column;
   margin-bottom: 0.75rem;
 }
 
 .post-list time {
   color: var(--muted);
-  min-width: 8rem;
+}
+
+@media (min-width: 640px) {
+  .post-list li {
+    flex-direction: row;
+    gap: 0 0.75rem;
+  }
+
+  .post-list time {
+    min-width: 10rem;
+  }
 }
 
 /* ---------- post page ---------- */
