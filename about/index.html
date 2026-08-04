@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | George Spanos</title>
+    <meta name="description" content="About George Spanos" />
+    <link rel="canonical" href="https://gspanos.tech/about/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About | George Spanos" />
+    <meta property="og:description" content="About George Spanos" />
+    <meta property="og:url" content="https://gspanos.tech/about/" />
+    <meta property="og:locale" content="en_GB" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/" aria-current="page">About</a>
+        <a href="/posts/">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>About</h1>
+        <p>My name is George Spanos and I&rsquo;m a Software Engineer with some 10 years of experience.</p>
+        <p>
+          Growing up, I&rsquo;ve found myself appreciating more and more when text tries to nudge me
+          to think rather than screaming about it. This page, hopefully, has the most words in this
+          blog.
+        </p>
+        <p>
+          I was typically one of the &ldquo;math kids&rdquo; in any class growing up. I remember
+          joking with my mom about taking a break when studying for school; I was saying:
+        </p>
+        <blockquote>
+          <p>&mdash; &ldquo;I&rsquo;m going to take a break and do some math, if that&rsquo;s ok.&rdquo;</p>
+          <p>&mdash; &ldquo;No problem!&rdquo;, she was happily saying, of course!</p>
+        </blockquote>
+        <p>
+          Having solid foundations, High school was a nice experience, and I managed to score quite
+          well in the exams. In 2011, I started studying Applied Mathematics and Physics at National
+          Technical University of Athens (NTUA). I really wanted to study at NTUA. As a math kid, I
+          felt that was the place, and engineering was something that grew in the family.
+        </p>
+        <p>
+          It was tough keeping up with NTUA. NTUA is usually more than a full-time job if you want to
+          finish your studies within 6 years, and I did not have the luxury of not having a job while
+          growing up. My primary side income was teaching. I&rsquo;ve been teaching math and physics
+          to high school kids for about 8 years. It was always a delightful experience, and I think I
+          was pretty good at it. To this day I still think that
+          <em>teaching shaped the way that my mind works.</em>
+        </p>
+        <p>
+          But teaching was not enough of an income, and I could not stand working at another caf&eacute;.
+          Then a friend of mine told me, &ldquo;Hey, this WordPress thing sounds useful, and I think
+          you&rsquo;d like it.&rdquo;. The next thing I knew, I started creating ugly websites and
+          making some side income. But it was not enough for me. When I wrote my first lines of code,
+          I just wanted more. And above all, I wanted to deeply understand what I was doing.
+        </p>
+        <p>
+          After that point, it was clear to me that programming was my dream-job. For the first 2
+          years of my career, I started with Front End Development and Angular. Specifically, I was
+          creating websites for US start-ups until I finally decided that I wanted to work for a
+          Software Company, just for the sake of learning more.
+        </p>
+        <p>
+          While I&rsquo;ve worked primarily on the Front End, I consider myself a Web Programmer. I
+          have a deep affinity for the web as a platform, trying to learn all its neat features and
+          always staying up-to-date. I also consider myself a generalist; I always enjoy learning
+          horizontally rather than vertically.
+        </p>
+        <p>I enjoy connecting with new people and sharing experiences.</p>
+        <p>George Spanos</p>
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

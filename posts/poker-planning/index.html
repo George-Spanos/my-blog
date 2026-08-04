@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developing a Poker Planning app | George Spanos</title>
+    <meta name="description" content="Exploring the challenges encountered during the development of a Scrum Poker Planning app utilizing diverse technology stacks." />
+    <link rel="canonical" href="https://gspanos.tech/posts/poker-planning/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Developing a Poker Planning app" />
+    <meta property="og:description" content="Exploring the challenges encountered during the development of a Scrum Poker Planning app utilizing diverse technology stacks." />
+    <meta property="og:url" content="https://gspanos.tech/posts/poker-planning/" />
+    <meta property="og:image" content="https://gspanos.tech/og-image/poker-planning.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:published_time" content="2024-01-21" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>Developing a Poker Planning app</h1>
+        <p class="post-meta">
+          <time datetime="2024-01-21">21 January 2024</time>
+          &middot; <span class="tags">golang, solidjs, web dev, poker planning, scrum poker planning</span>
+        </p>
+
+        <h2 id="problem-space">Problem Space</h2>
+        <p>While I was working as a front-end architect last year, we started working with story points and therefore we came up with a need for a poker planning app. I don’t particularly find this method useful, but sometimes, team decisions prevail, even if one might not find the method particularly useful.</p>
+        <blockquote>
+        <p>For anyone not familiar, Planning Poker, also called “Scrum Poker,” is a consensus-based Agile planning and estimating technique used to assess product backlogs, guessing how much time and effort is needed to complete each of the backlog’s initiatives. You can read more about it <a href="https://www.simplilearn.com/what-is-planning-poker-article#what_is_planning_poker" rel="noopener noreferrer" target="_blank">here</a>.</p>
+        </blockquote>
+        <p>We searched for apps online but most of them did not seem UX-friendly enough for our standards, and the ones who did, were behind a paywall. The problem seems quite trivial, so I decided to solve it myself and <a href="https://github.com/moby-it/planning-poker" rel="noopener noreferrer" target="_blank">open-source</a> it. A live version of the app can be found <a href="https://poker-planning.net" rel="noopener noreferrer" target="_blank">here</a>.</p>
+        <h2 id="the-tech-stack">The Tech Stack</h2>
+        <p>For new projects that have a certain scope, I almost always grab this chance to mess with new technologies. I’ve been writing Go for at least 18 months at this point and thought that this could be a good project to play with some concurrency and WebSockets programming.</p>
+        <p>Regarding the UI layer, I was <strong>considerably more conflicted</strong>. I went through a phase where I found most front-end tools unnecessarily complex for my usual tasks. I still feel that, on a relatively lighter scale. For the sake of comparison, I decided to re-implement the UI with multiple technologies. Tools that I used included:</p>
+        <ul>
+        <li>React</li>
+        <li><strong>SolidJS</strong></li>
+        <li>Nuxt</li>
+        <li>VanillaJS</li>
+        <li>HTMX</li>
+        </ul>
+        <p>With most of them, I did not go all the way to the end. I reached a point in which I felt that I did not have to gain much anymore and then moved to the next one. You can find more about my implementations <a href="https://github.com/moby-it/planning-poker/branches" rel="noopener noreferrer" target="_blank">on github</a>.</p>
+        <p><strong>The current production implementation is done with Golang as a stateful, WebSocket-based backend and the UI is done with SolidJS. There’s no database in this project.</strong></p>
+        <h2 id="project-challenges">Project Challenges</h2>
+        <p>The problem is generally straightforward. A user has a username and can create a Room, in which people can join and vote. Votes come in the form of numbers. There is a synchronization issue within each Room, as each voter needs to vote before the revealing is available. This means that there are different Room States and User Vote states.</p>
+        <p>What I discovered to be the most challenging part of this problem is the consistency of connections. WebSockets tend to close in quite sensitive ways in Modern Browsers. To name a few, one of them being that a user is alt-tabbed, or even when there is no mouse movement for about 20 seconds or more. These issues are primarily browser restrictions for security and resource-saving, that the app has to foresee to be stable. We need to implement appropriate ping-pong messages for keeping the connection alive, while always trying to reconnect when the socket closes, to cover all inconsistencies between how different browsers handle WebSockets. There’s also managing Poker Round readiness when a user disconnects and whether or not they reconnect</p>
+        <h2 id="server-side-remarks">Server-Side remarks</h2>
+        <p>This was another one of those wonderful times when picking Go led me to learn more about the underlying platform rather than simply exploring this specific problem. This, to me, always feels amazing. I used the <a href="https://github.com/gorilla/websocket" rel="noopener noreferrer" target="_blank">gorilla/websocket</a> library and just by reading the code and the official <a href="https://datatracker.ietf.org/doc/html/rfc6455" rel="noopener noreferrer" target="_blank">WebSocket specification</a>, I learned so much about what a WebSocket connection actually is. I’ve written 3-4 chat clients and servers and yet I learned more about WebSockets through this project.</p>
+        <ul>
+        <li>I learned that the nature of a TCP connection is not to close by default, even though this is how we’ve learned that HTTP works.</li>
+        <li>TCP connections terminate explicitly. In the case of HTTP, this explicitness comes from the HTTP Protocol rather than the nature of the connection.</li>
+        <li>The WebSocket connection is essentially an HTTP connection that gets “upgraded” through a specific header. This indicates to the server that this connection should stay open and receive incoming messages with a specific format, which is described in the WebSocket Protocol.</li>
+        <li>The connection is done over TCP ports 443 or 80 and its goal is to enable a two-way communication between server and client.</li>
+        </ul>
+        <p>While I knew most of this, I lacked some specifics that made my understanding of WebSockets quite vague. The implementation of Web Sockets in Go can be found <a href="https://github.com/moby-it/planning-poker/tree/main/api" rel="noopener noreferrer" target="_blank">here</a>.</p>
+        <h2 id="client-side-remarks">Client-Side remarks</h2>
+        <h3 id="solidjs">SolidJS</h3>
+        <p>In terms of development simplicity, SolidJS ended up beating every tool. The next one for me would be VanillaJS, but there’s a considerable margin present, simply because of the ease of development. There’s still just too much boilerplate and imperative programming you have to go through, when you’re trying to do almost anything with VanillaJS. On the contrary, SolidJS gave me access to the declarative concepts of React, while still staying as close to the platform as possible.</p>
+        <blockquote>
+        <p>Thank you, <a href="https://twitter.com/RyanCarniato" rel="noopener noreferrer" target="_blank">Ryan</a> and the <a href="https://github.com/solidjs/solid/graphs/contributors" rel="noopener noreferrer" target="_blank">SolidJS contributors</a> for the amazing work.</p>
+        </blockquote>
+        <p>Having worked with React, I implemented this with Solid with my mind mostly being shut off. I typed some code that felt intuitive and <strong>stuff just worked</strong>. It was amazing.</p>
+        <p><em>Of course, this problem is solvable with every one of the above-mentioned tools. I’m commenting on what was easier to implement and test, and ultimately, reason about.</em></p>
+        <h3 id="htmx">HTMX</h3>
+        <p>I did not go all the way with HTMX. I managed to receive and send messages through WebSockets, but something about exchanging WebSocket messages in HTML format just felt wrong. I did not separate the Business Logic API from the HTMX API which would help, but still, the data with HTML and WebSockets felt wrong. At the end of the day, HTMX is a tool I will come back to at some point.</p>
+        <h3 id="react">React</h3>
+        <p>I don’t have much to say about React. The implementation was relatively straightforward, with the classic nuances of <code>useEffect</code>, Memos and Callbacks a React app typically has. Component wise it was very similar to Solid. State-wise, signals inside contexts were much easier to structure and reason about than <code>useState</code>.</p>
+        <h3 id="testing">Testing</h3>
+        <p>It was quite hard to test this app since the actual UI testing had to be done with multiple browsers open. I managed to do this by spinning up multiple incognito puppeteer sessions and doing some voting on each one. You can find more <a href="https://github.com/moby-it/planning-poker/tree/main/e2e" rel="noopener noreferrer" target="_blank">here</a>.</p>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>After implementing the UI almost 4 times, it got quite boring, which is a good thing. It’s something I would advise anyone to try at some point. You really get a feel for your tools after removing the business logic complexities and can identify what tastes better quite easily.</p>
+        <p>My takeaways are:</p>
+        <ol>
+        <li>WebSockets problems need quite some testing to get right.</li>
+        <li>It feels very good developing apps with SolidJS</li>
+        <li>After all these years of ES versions, VanillaJS is still much more cumbersome to deal with than modern Front-End frameworks.</li>
+        <li>HTMX is something worth considering for your next project. It shifts attention back to the server in a unique, yet familiar way.</li>
+        </ol>
+        <p>George Spanos</p>
+        <p><a href="https://moby-it.com/" rel="noopener noreferrer" target="_blank">Moby IT</a></p>
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

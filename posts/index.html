@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | George Spanos</title>
+    <meta name="description" content="All posts by George Spanos — software, entrepreneurship, music and self-reflection." />
+    <link rel="canonical" href="https://gspanos.tech/posts/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog | George Spanos" />
+    <meta property="og:description" content="All posts by George Spanos — software, entrepreneurship, music and self-reflection." />
+    <meta property="og:url" content="https://gspanos.tech/posts/" />
+    <meta property="og:locale" content="en_GB" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Blog</h1>
+      <p>Everything I&rsquo;ve written here, newest first.</p>
+      <ul class="post-list">
+        <li>
+          <time datetime="2026-04-13">13 April 2026</time>
+          <a href="/posts/recreational-programming/">Recreational Programming - C, Assembly on Bare Metal</a>
+        </li>
+        <li>
+          <time datetime="2026-02-19">19 February 2026</time>
+          <a href="/posts/reactive-life/">From Reactive programming to Reactive life</a>
+        </li>
+        <li>
+          <time datetime="2026-01-02">2 January 2026</time>
+          <a href="/posts/feeling-lost/">Feeling Lost</a>
+        </li>
+        <li>
+          <time datetime="2025-11-11">11 November 2025</time>
+          <a href="/posts/growing-up/">Growing up</a>
+        </li>
+        <li>
+          <time datetime="2025-02-25">25 February 2025</time>
+          <a href="/posts/about-rxjs/">Thoughts on RxJS and declarative code</a>
+        </li>
+        <li>
+          <time datetime="2025-02-03">3 February 2025</time>
+          <a href="/posts/two-year-moby/">Moby IT - Second Year Review</a>
+        </li>
+        <li>
+          <time datetime="2024-12-23">23 December 2024</time>
+          <a href="/posts/my-first-game-pitch/">Studying game design - My first game pitch!</a>
+        </li>
+        <li>
+          <time datetime="2024-11-13">13 November 2024</time>
+          <a href="/posts/exploring-game-design/">Exploring Game Design - a new endeavor</a>
+        </li>
+        <li>
+          <time datetime="2024-09-18">18 September 2024</time>
+          <a href="/posts/web-as-a-public-good/">The web as a public good</a>
+        </li>
+        <li>
+          <time datetime="2024-08-14">14 August 2024</time>
+          <a href="/posts/moving-away-from-enterprise-services/">Moving away from Enterprise Services</a>
+        </li>
+        <li>
+          <time datetime="2024-06-17">17 June 2024</time>
+          <a href="/posts/learning-fp-3/">Onto Functional Programming - part 3</a>
+        </li>
+        <li>
+          <time datetime="2024-05-19">19 May 2024</time>
+          <a href="/posts/learning-fp-2/">Onto Functional Programming - part 2</a>
+        </li>
+        <li>
+          <time datetime="2024-05-03">3 May 2024</time>
+          <a href="/posts/learning-fp/">Onto Functional Programming</a>
+        </li>
+        <li>
+          <time datetime="2024-04-17">17 April 2024</time>
+          <a href="/posts/zero-in/">Zero In</a>
+        </li>
+        <li>
+          <time datetime="2024-02-24">24 February 2024</time>
+          <a href="/posts/one-year-moby/">Bootstrapping A Software Company - One Year Review</a>
+        </li>
+        <li>
+          <time datetime="2024-02-04">4 February 2024</time>
+          <a href="/posts/facts-1/">Facts 1 - You are what you love</a>
+        </li>
+        <li>
+          <time datetime="2024-01-27">27 January 2024</time>
+          <a href="/posts/advent-of-code-2023/">Advent of Code 2023 with Go</a>
+        </li>
+        <li>
+          <time datetime="2024-01-21">21 January 2024</time>
+          <a href="/posts/poker-planning/">Developing a Poker Planning app</a>
+        </li>
+        <li>
+          <time datetime="2024-01-10">10 January 2024</time>
+          <a href="/posts/teaching-react-express/">Teaching React and Express - One-year review</a>
+        </li>
+        <li>
+          <time datetime="2024-01-04">4 January 2024</time>
+          <a href="/posts/trying-nuxt/">Trying out Vue/Nuxt - Impressions on my first meta-framework</a>
+        </li>
+        <li>
+          <time datetime="2024-01-01">1 January 2024</time>
+          <a href="/posts/future-of-web-development/">2024 - State of Web Development</a>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<!--
+  New post: copy this file to posts/<slug>/index.html, then replace every
+  {{PLACEHOLDER}} below and write the body inside <article>.
+  See README.md for the two or three other files that need a line adding.
+-->
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{TITLE}} | George Spanos</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <link rel="canonical" href="https://gspanos.tech/posts/{{SLUG}}/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{TITLE}}" />
+    <meta property="og:description" content="{{DESCRIPTION}}" />
+    <meta property="og:url" content="https://gspanos.tech/posts/{{SLUG}}/" />
+    <meta property="og:image" content="https://gspanos.tech/og-image/{{SLUG}}.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:published_time" content="{{ISO_DATE}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>{{TITLE}}</h1>
+        <p class="post-meta">
+          <time datetime="{{ISO_DATE}}">{{DISPLAY_DATE}}</time>
+          &middot; <span class="tags">{{TAGS}}</span>
+        </p>
+
+        <!-- Write the post here. Plain HTML: <p>, <h2>, <ul>, <blockquote>, <pre><code>. -->
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

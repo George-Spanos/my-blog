@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exploring Game Design - a new endeavor | George Spanos</title>
+    <meta name="description" content="Sharing thoughts on discovering what game design is and how could a web developer rewire their brain to fit in it." />
+    <link rel="canonical" href="https://gspanos.tech/posts/exploring-game-design/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Exploring Game Design - a new endeavor" />
+    <meta property="og:description" content="Sharing thoughts on discovering what game design is and how could a web developer rewire their brain to fit in it." />
+    <meta property="og:url" content="https://gspanos.tech/posts/exploring-game-design/" />
+    <meta property="og:image" content="https://gspanos.tech/og-image/exploring-game-design.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:published_time" content="2024-11-13" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>Exploring Game Design - a new endeavor</h1>
+        <p class="post-meta">
+          <time datetime="2024-11-13">13 November 2024</time>
+          &middot; <span class="tags">game design, game dev</span>
+        </p>
+
+        <h2 id="a-personal-note">A personal note</h2>
+        <p>Staying consistent with myself, I’ll keep this blog mostly as a personal diary. Posts will not be polished and/or edited in order to convey specific messages. I’ve come to terms that, even though I do want to participate in the entrepreneurship world and share a part of myself online, I despise the typical ways in which people handle marketing and exposure nowadays.
+        I’m not the kind of person that will ever participate in this hype-oriented choreography in LinkedIn, X, or any other platform.</p>
+        <p>I consider the plethora of content useless for me, and I’m willing to throw the rest under the bus
+        for the sake of quite and peace of mind. I feel the quality of the most popular platforms gradually degrade over the years, including the internet experience as a whole.</p>
+        <p>As Sam Harris recently said in his <a href="https://www.youtube.com/watch?v=txjr4IdCao8" rel="noopener noreferrer" target="_blank">podcast</a>, and I’m slightly paraphrasing: the information bloat that reigns of the internet is making us dumber, not smarter.I’d rather build my own new ways of interacting with content.</p>
+        <p>Aside from that, I really believe that no one <strong>needs</strong> to follow the modern form of marketing and advertising, in order to “succeed” on whatever it is they’re trying to do. As long as you stay true to yourself and express yourself freely, you’ll definitely find some audience that’s interested in what you have to say.</p>
+        <p>And actually connecting to audience is what I consider success.</p>
+        <h2 id="so-yea-game-design">So yea, Game Design</h2>
+        <p>As I’ve written in a <a href="https://gspanos.tech/posts/moving-away-from-enterprise-services/" rel="noopener noreferrer" target="_blank">previous blog post</a>, I plan on moving away from Enterprise Software Services and try to explore new ideas that probably fall
+        closer in the Product Development line of work. Trying to align this with my innate need to do something more artistic, I decided to dedicate some time in understanding <strong>what it actually means to create a game</strong>.</p>
+        <p>For me this is not something that I intend to learn over a book, or some quick video on YouTube. In order to actually feel what creating games is, and whether it’s something I would enjoy, I have to go over
+        some basic bibliography and spend time with communities that do this for many many years. I want to take a sneak peak of the gaming industry from creators perspective. But, in order to narrow this down, I have to say
+        that I approach this as an indie game developer right now. I do not intend to pursue a career as a games programmer, as I’ve already mentally disconnected myself from the employee-mentality, to some extend.
+        I’d rather explore this as a game creator.</p>
+        <p>After browsing I ended up buying some 101 books for Game Designers. Here are some of them:</p>
+        <ol>
+        <li>Level Up! The Guide to Great Video Game Design, by Scott Rogers</li>
+        <li>Designing Games by Tynan Sylvester</li>
+        <li>The Art of Game Design - A Book of Lenses by Jesse Schell</li>
+        <li>Homo Ludens: A Study of the Play-Element in Culture by Johan Huizinga</li>
+        <li>Level Design: Concept, Theory and Practice by Rudolf Kremers</li>
+        <li>A Theory of Fun for Game Design by Raph Koster</li>
+        </ol>
+        <p>I intent to read most, if not all of them until June 2025. So far everything seems really interesting and
+        it’s a wonderful brain rewiring, going from something extremely deterministic as is programming to something that’s
+        a fine art to it’s core, game design.</p>
+        <p>I feel that programming mostly feels like solving puzzles daily. If you’re the guy that gets endorphins out of this you’re going to have an amazing time.
+        Art feels mostly like an exploration, which is a feeling I’ve deeply missed, with a whole world of beauties behind it.</p>
+        <h2 id="why-game-design">Why Game Design?</h2>
+        <p>I feel that most programmers at some point have dreamed of creating their own game.</p>
+        <p>In addition to that, I remember feeling conflicted even as a kid regarding which career to choose. I did spent more than 10 years in which music was a big part of my life. I’ve been playing
+        the guitar for about that long, as well as experimenting with other instruments as well. When I approached the time in which
+        I had to choose what to study, I felt that I had the choice to either choose music or mathematics, since math was also something I
+        had an affinity for. I chose the later which lead to programming. And sadly my relationship with creating music has
+        declined ever since. Right now, after almost a decade of choosing math, I’ve been finding myself missing this kind of creativity more and more.</p>
+        <p>So I thought that maybe it’s the time to take this game development thing-y seriously. It includes many many creative aspects, from visual
+        arts, to music, to storytelling as well as code! And after the burnout of the last 1-2 years, it’s been really refreshing so far.</p>
+        <h2 id="visual-arts-and-drawing">Visual Arts and Drawing</h2>
+        <p>I’ve never been good at drawing. I’ve always admired painting, sketching and almost all forms of it. So I decided to take some
+        drawing classes online with the ultimate goal of being able to draw for my games. I recommend <a href="https://artwod.com/" rel="noopener noreferrer" target="_blank">Artwod</a>. It’s been an amazing experience so far. The bang-for-buck of this platform is simply amazing.</p>
+        <p>I know this will probably take years, but I’ve learnt to not really care as long as I am enjoying myself.</p>
+        <p>Ok, the previous sentence is not exactly true.</p>
+        <h2 id="career">Career</h2>
+        <p>Working on anything for 40 hours per week is a huge portion of our lives. I’ve recently found myself get averted by what I was
+        really enjoying, which is reading about computer science. I still think that I do love computer science, even though it’s tough clearly state this after burnout.
+        It’s a science I feel it’s amazing, but I really don’t like the typical developer gig out there.</p>
+        <p>For the last decade working and studying computers and the web has been what I did constantly. I would say it took about 70-80% of the hours I was awake, daily. I feel it’s time for something new. And due to the fact that I consider work as a big part of life, I really want
+        to work on stuff that I enjoy, and it’s not just a transaction. I simply cannot live like that.</p>
+        <p>So this is why I do not consider my study of Game Design to be clearly a hobby. It is something that I do for me, for my own amusement
+        but it’s also something that, in case I regularly enjoy, I will fund it myself until it becomes the next sustainable career for me.</p>
+        <p>I will fund it through Software Services. It’s what I know how to do, and do well. I consistently get good feedback from my colleagues and clients so I intent to use this skillet I’ve built over the last decade to possible fuel this new adventure.</p>
+        <h2 id="emotional-state">Emotional State</h2>
+        <p>I’ve stated it again, but I think I’m burnt out. Bootstrapping a company, trying to understand company finances, marketing, sales
+        recruiting and a million other things I had no idea about, while working full time, has been really exhausting. I have a hard time finding enjoyment even on simple things. My mind constantly jumps from idea to idea, never taking a break, which I feel I really need. And I do need to re-train myself on learning to take breaks.</p>
+        <p>December is typically a month of reflection and calmness for me. With these new goals I will sit down, access and come up with a
+        plan for the upcoming years, with clear goals, both in terms of games probably, and finance.</p>
+        <p>What I do not regret at all is starting Moby IT. Even though it’s been quite tiring, even though I still have not found
+        exactly where I want to spend my time on, Moby will be the vehicle to whatever venture I’ll do moving forward.</p>
+        <p>I know that I need something new. I know that I need something creative. And I know that I need simpler and quieter things in phase of my life.</p>
+        <p>For anyone that wants to chat, you can contact me at gspanos[at]moby-it[dot]com</p>
+        <p>Cheers</p>
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

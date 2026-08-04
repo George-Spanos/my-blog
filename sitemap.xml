@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-maintained. New post? Add one <url> line. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://gspanos.tech/</loc></url>
+  <url><loc>https://gspanos.tech/about/</loc></url>
+  <url><loc>https://gspanos.tech/posts/</loc></url>
+  <url><loc>https://gspanos.tech/posts/recreational-programming/</loc></url>
+  <url><loc>https://gspanos.tech/posts/reactive-life/</loc></url>
+  <url><loc>https://gspanos.tech/posts/feeling-lost/</loc></url>
+  <url><loc>https://gspanos.tech/posts/growing-up/</loc></url>
+  <url><loc>https://gspanos.tech/posts/about-rxjs/</loc></url>
+  <url><loc>https://gspanos.tech/posts/two-year-moby/</loc></url>
+  <url><loc>https://gspanos.tech/posts/my-first-game-pitch/</loc></url>
+  <url><loc>https://gspanos.tech/posts/exploring-game-design/</loc></url>
+  <url><loc>https://gspanos.tech/posts/web-as-a-public-good/</loc></url>
+  <url><loc>https://gspanos.tech/posts/moving-away-from-enterprise-services/</loc></url>
+  <url><loc>https://gspanos.tech/posts/learning-fp-3/</loc></url>
+  <url><loc>https://gspanos.tech/posts/learning-fp-2/</loc></url>
+  <url><loc>https://gspanos.tech/posts/learning-fp/</loc></url>
+  <url><loc>https://gspanos.tech/posts/zero-in/</loc></url>
+  <url><loc>https://gspanos.tech/posts/one-year-moby/</loc></url>
+  <url><loc>https://gspanos.tech/posts/facts-1/</loc></url>
+  <url><loc>https://gspanos.tech/posts/advent-of-code-2023/</loc></url>
+  <url><loc>https://gspanos.tech/posts/poker-planning/</loc></url>
+  <url><loc>https://gspanos.tech/posts/teaching-react-express/</loc></url>
+  <url><loc>https://gspanos.tech/posts/trying-nuxt/</loc></url>
+  <url><loc>https://gspanos.tech/posts/future-of-web-development/</loc></url>
+</urlset>

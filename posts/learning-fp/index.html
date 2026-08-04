@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Onto Functional Programming | George Spanos</title>
+    <meta name="description" content="Thoughts on my second try to learn more about functional programming - what&#x27;s and why&#x27;s" />
+    <link rel="canonical" href="https://gspanos.tech/posts/learning-fp/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Onto Functional Programming" />
+    <meta property="og:description" content="Thoughts on my second try to learn more about functional programming - what&#x27;s and why&#x27;s" />
+    <meta property="og:url" content="https://gspanos.tech/posts/learning-fp/" />
+    <meta property="og:image" content="https://gspanos.tech/og-image/learning-fp.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:published_time" content="2024-05-03" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>Onto Functional Programming</h1>
+        <p class="post-meta">
+          <time datetime="2024-05-03">3 May 2024</time>
+          &middot; <span class="tags">functional programming, haskell</span>
+        </p>
+
+        <h2 id="why">Why?</h2>
+        <p>Because I’m addicted to learning new things. Whether this is a framework, a language or a paradigm, I just enjoy digesting stuff mentally. Sometimes I do fall into spirals over this, but I’ve learned to accept that some things take time to digest. Regarding learning, I have a very specific process:</p>
+        <ol>
+        <li>Intake a bunch of information</li>
+        <li>disassemble it into digestible pieces</li>
+        <li>Assemble the pieces into something that solves a real problem.</li>
+        </ol>
+        <p>I’ve found out that this method helps me evolve and creates an amalgam of knowledge that is, at the end of the day, my toolset.</p>
+        <p>As I’ve grown older and sometimes interested in less trivial stuff than before, I’ve come to appreciate the time that it takes for me to learn something. That did not come for granted. There are many times when I still want to get stuff done, rather than “reading docs”, or “watching videos”. I just want the X thing done with the Y tool. **As programmers, we’ve gotten used to digesting and discarding huge chunks of information daily, typically at the expense of the reduction of our capacity to understand more complex things as years go by.
+        **</p>
+        <p>This is why, personally, regarding studying goals, I frame them in a year. For each year I try to get good at <strong>3 things maximum</strong>. This year for me is about:</p>
+        <ol>
+        <li>UX UI Design</li>
+        <li>Functional Programming</li>
+        </ol>
+        <h2 id="my-history-with-functional-programming">My History with Functional Programming</h2>
+        <p>This is the 2nd time I have tried to study and understand FP (Functional Programming). My first attempt was 2 years ago when I stumbled upon <a href="https://docs.marblejs.com/" rel="noopener noreferrer" target="_blank">marblejs</a>, <em>a functional reactive Node.js framework for building server-side applications</em>. At that time, I was working with <a href="playpokerodds.com">playpokerodds.com</a> and decided to play with this tool. Marble brought me closer to <a href="https://gcanti.github.io/fp-ts/" rel="noopener noreferrer" target="_blank">fp-ts</a>, <em>a library to help developers write purely functional programs with Typescript</em>, which I had never heard of before.</p>
+        <p>I had a really hard time understanding what was happening with fp-ts and marble. Of course, the reason was that I had no idea about FP. And that’s where I started diving in.</p>
+        <h2 id="functional-programming---1st-attempt">Functional programming - 1st Attempt</h2>
+        <p>I studied for about 2-3 months about FP theory in general, before recalling that I had a course in <a href="https://ntua.gr/en/" rel="noopener noreferrer" target="_blank">NTUA</a> called Group Theory in which I was introduced to all those ideas. I had of course forgotten almost all of them, so I went ahead and picked up some old books to scrap some of the theory again. In the end, I managed to create the web-api for <a href="playpokerodds.com">playpokerodds.com</a> with marblejs, fp-ts (and io-ts for data validation).</p>
+        <p>Truth is that I did not feel much of a benefit from having a reactive web-api that works with a request-response model, is completely functional and uses Rxjs. It was flashy, but I didn’t feel any benefits. Maybe it was because I was the only one working on this issue that had a rather specific problem space. In the end, I ditched fp-ts and marble for this project and wrote a simple express-with-typescript backend very very fast.</p>
+        <p>So to wrap this section up, I don’t consider myself completely irrelevant to the concepts. I feel that after those 2-3 months I became about 20-30% accustomed to some basic FP ideas.</p>
+        <h2 id="why-try-again">Why try again?</h2>
+        <p>It is a fact that people who adopt the FP mentality do not shift back. There are a couple of people that I can recall right now, not presented in order of importance:</p>
+        <ol>
+        <li>Very recently, Uncle Bob in an <a href="https://www.youtube.com/watch?v=UBXXw2JSloo" rel="noopener noreferrer" target="_blank">interview</a> with <a href="https://twitter.com/ThePrimeagen" rel="noopener noreferrer" target="_blank">ThePrimeagen</a> revealed his language of choice is <a href="https://clojure.org/" rel="noopener noreferrer" target="_blank">Clojure</a>, for the last ~15 years. This struck me as something unexpected, coming from someone who has spent decades with C++ and Java.</li>
+        <li>There’s been a movement in the Web Front End world for quite some time now that encourages FP. Maybe the greatest example is React, where
+        <code>UI = f (state)</code>.</li>
+        <li><a href="https://twitter.com/teej_dv" rel="noopener noreferrer" target="_blank">TJ DeVries</a> is another person who has been playing with FP and OCaml in the last 1-2 years and has generally great things to say about this toolset.</li>
+        </ol>
+        <p>I certainly forget many mant others. This is a list of the top of my head. Another recent influence was a talk by Greece JS, a JS meetup in Athens, which mentioned <a href="https://effect.website/" rel="noopener noreferrer" target="_blank">Effect</a>.</p>
+        <p>The biggest influence though came from speaking with <a href="https://www.linkedin.com/in/chbakouras/" rel="noopener noreferrer" target="_blank">Chrisostomos Bakouras</a>, the Director of Backend Engineering at Schoox. I met Chrisostomos at at 2023’s Voxxed Days Thessaloniki, and,  at some point he said, “Programming languages aside, it’s important to learn to design systems like that”, claiming that FP has helped him immensely in his software architectural skills. This stuck with me.</p>
+        <p>So after all those pokes, I decided to dive in again to FP, this time dedicating more time and taking it slow.</p>
+        <h2 id="current-process">Current process</h2>
+        <p>I decided to pick up Haskell through <a href="https://haskellbook.com/" rel="noopener noreferrer" target="_blank">The Haskell Book</a>. It’s a big one so this is going to take some time.
+        My goal is to spend enough time with the book and then create something useful with it. I doubt I’m going to stick with Haskell but I will try Haskell and another couple of ML-like languages. I know for sure I’m going to create something with this toolset, probably going to be a web app, end-to-end.</p>
+        <p>I’m already at about 20% of this book and feel that I’m still just tipping my toes. I haven’t felt this excited about learning something in a long time. The fact that it’s a slow burn, learning and adjusting your mind to fp, is very very intriguing to me right now.</p>
+        <p>I might keep a journal on how this goes and I’m probably going to open source everything that I do.</p>
+        <p>For anyone reading who has worked with FP, please do contact me. I would like to stay in touch and learn from you, in case you are willing to. You can find me on <a href="https://www.linkedin.com/in/george-spanos/" rel="noopener noreferrer" target="_blank">linkedin</a> and <a href="https://twitter.com/GeorgePesti" rel="noopener noreferrer" target="_blank">twitter</a>.</p>
+        <p>Cheers</p>
+        <p>George Spanos,</p>
+        <p>Moby IT</p>
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

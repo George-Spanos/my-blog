@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-maintained. New post? Copy an <item> block to the top and edit it. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>George Spanos</title>
+    <description>Personal blog of George Spanos, founder of Moby IT</description>
+    <link>https://gspanos.tech/</link>
+    <language>en-GB</language>
+    <atom:link href="https://gspanos.tech/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recreational Programming - C, Assembly on Bare Metal</title>
+      <link>https://gspanos.tech/posts/recreational-programming/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/recreational-programming/</guid>
+      <description>Learning C, assembly, and bare-metal programming from scratch — using AI as a mentor</description>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>From Reactive programming to Reactive life</title>
+      <link>https://gspanos.tech/posts/reactive-life/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/reactive-life/</guid>
+      <description>Personal reflection on the parallels between reactive programming and a more fulfilling way of living</description>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Feeling Lost</title>
+      <link>https://gspanos.tech/posts/feeling-lost/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/feeling-lost/</guid>
+      <description>Sharing recent feeling about work, hobbies and family</description>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Growing up</title>
+      <link>https://gspanos.tech/posts/growing-up/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/growing-up/</guid>
+      <description>Reflecting on my current mental state, setting up goals</description>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Thoughts on RxJS and declarative code</title>
+      <link>https://gspanos.tech/posts/about-rxjs/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/about-rxjs/</guid>
+      <description>George Spanos opinions on why not choose rxjs for structuring your front end interactivity.</description>
+      <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moby IT - Second Year Review</title>
+      <link>https://gspanos.tech/posts/two-year-moby/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/two-year-moby/</guid>
+      <description>Reviewing my second year as a software company founder.</description>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Studying game design - My first game pitch!</title>
+      <link>https://gspanos.tech/posts/my-first-game-pitch/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/my-first-game-pitch/</guid>
+      <description>My first game pitch for Cosmic Jack, a pattern-based puzzle game</description>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Exploring Game Design - a new endeavor</title>
+      <link>https://gspanos.tech/posts/exploring-game-design/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/exploring-game-design/</guid>
+      <description>Sharing thoughts on discovering what game design is and how could a web developer rewire their brain to fit in it.</description>
+      <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The web as a public good</title>
+      <link>https://gspanos.tech/posts/web-as-a-public-good/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/web-as-a-public-good/</guid>
+      <description>Sharing my opinions on the democratization of the web, the equality of opportunity and where our focus should be.</description>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moving away from Enterprise Services</title>
+      <link>https://gspanos.tech/posts/moving-away-from-enterprise-services/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/moving-away-from-enterprise-services/</guid>
+      <description>Reflecting on my choice to pivot from providing Software Service to something new</description>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Onto Functional Programming - part 3</title>
+      <link>https://gspanos.tech/posts/learning-fp-3/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/learning-fp-3/</guid>
+      <description>Review of the Haskell book and next steps trying to learn functional programming</description>
+      <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Onto Functional Programming - part 2</title>
+      <link>https://gspanos.tech/posts/learning-fp-2/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/learning-fp-2/</guid>
+      <description>Progress on my journey for learning Haskell after 20 days in</description>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Onto Functional Programming</title>
+      <link>https://gspanos.tech/posts/learning-fp/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/learning-fp/</guid>
+      <description>Thoughts on my second try to learn more about functional programming - what&#x27;s and why&#x27;s</description>
+      <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zero In</title>
+      <link>https://gspanos.tech/posts/zero-in/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/zero-in/</guid>
+      <description>Writing about the importance of being able to narrow down your field of view, from the scope of entrepreneurship marketing and sales</description>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bootstrapping A Software Company - One Year Review</title>
+      <link>https://gspanos.tech/posts/one-year-moby/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/one-year-moby/</guid>
+      <description>Reviewing my first year transitioning from a software engineer to a software company founder.</description>
+      <pubDate>Sat, 24 Feb 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Facts 1 - You are what you love</title>
+      <link>https://gspanos.tech/posts/facts-1/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/facts-1/</guid>
+      <description>Discussing the importance of working alongside your emotions and not against them</description>
+      <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Advent of Code 2023 with Go</title>
+      <link>https://gspanos.tech/posts/advent-of-code-2023/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/advent-of-code-2023/</guid>
+      <description>Reflecting on solving Advent of Code 2023 with Golang - dos and don&#x27;ts, challenges and rewards</description>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Developing a Poker Planning app</title>
+      <link>https://gspanos.tech/posts/poker-planning/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/poker-planning/</guid>
+      <description>Exploring the challenges encountered during the development of a Scrum Poker Planning app utilizing diverse technology stacks.</description>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Teaching React and Express - One-year review</title>
+      <link>https://gspanos.tech/posts/teaching-react-express/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/teaching-react-express/</guid>
+      <description>One year retrospect on teaching React and Express to people with no programming background.</description>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Trying out Vue/Nuxt - Impressions on my first meta-framework</title>
+      <link>https://gspanos.tech/posts/trying-nuxt/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/trying-nuxt/</guid>
+      <description>Impressions and thoughts after trying Nuxt and Vue after 8 years of Angular development.</description>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>2024 - State of Web Development</title>
+      <link>https://gspanos.tech/posts/future-of-web-development/</link>
+      <guid isPermaLink="true">https://gspanos.tech/posts/future-of-web-development/</guid>
+      <description>Speculating on the future of web development and hope for the future.</description>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The web as a public good | George Spanos</title>
+    <meta name="description" content="Sharing my opinions on the democratization of the web, the equality of opportunity and where our focus should be." />
+    <link rel="canonical" href="https://gspanos.tech/posts/web-as-a-public-good/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The web as a public good" />
+    <meta property="og:description" content="Sharing my opinions on the democratization of the web, the equality of opportunity and where our focus should be." />
+    <meta property="og:url" content="https://gspanos.tech/posts/web-as-a-public-good/" />
+    <meta property="og:image" content="https://gspanos.tech/og-image/web-as-a-public-good.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:published_time" content="2024-09-18" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>The web as a public good</h1>
+        <p class="post-meta">
+          <time datetime="2024-09-18">18 September 2024</time>
+          &middot; <span class="tags">work, vocation, web</span>
+        </p>
+
+        <h2 id="foreword">Foreword</h2>
+        <p>Blogging is still something new to me. I do enjoy it and quite often find myself wanting to write down things primarily to get them out of my system. However, I find myself having ideas that I keep them as drafts for months, due to “not polishing them enough”. I’ve decided to publish more raw material, potentially in the for of draft thouhgts. I feel that the act of expression is more valuable to me, rather than creating a “clean and polished” blog.</p>
+        <h2 id="perspective">Perspective</h2>
+        <p>A big part of my life revolves around software and a <em>huge</em> part of my life revolves around the internet. I’ve been born in 1993. I’ve had the blessing of having lived both the <em>running-child-on-the-streets-without-a-tablet</em> era, as well as <em>we’re-inside-a-house-and-playing-video-games</em> era. I’ve had the chance to live somewhat before the digital age took over most of our lives.</p>
+        <p>Dropping out of college I needed a new career path. Through the internet I found my newfound love for programming. Through the internet I managed to cultivate my knowledge enough to get in the field and finding my first mentors, thus bringing me to where I am and, more specifically, who I am - I’m someone who brings food to the table quite comfortably, and I can attribute a great deal of that <em>to the free knowledge floating on the internet</em>.</p>
+        <h2 id="value">Value</h2>
+        <p>It’s impossible to overestimate the impact of the internet on the world. I don’t think I need to write down anything for that matter.
+        What I’ve been thinking about is that the internet is/should be a <strong>public good</strong>.</p>
+        <blockquote>
+        <p>In economics, a public good (also referred to as a social good or collective good) is a good that is both non-excludable and non-rivalrous. Use by one person neither prevents access by other people, nor does it reduce availability to others. Therefore, the good can be used simultaneously by more than one person.
+        Some examples include: clean air, information goods, such as official statistics, free and open-source software, authorship, public television, radio, Wikipedia, national defense, fire service, flood defense, street lights, internet
+        Public good, Wikipedia</p>
+        </blockquote>
+        <p>It’s importance is so high in the bar of our daily lives, in which I consider it crucial for the individual and social survival. It makes sense that you should have access to internet with the same amount of difficulty as having water at your house.</p>
+        <p>The perception of the internet as a public good has made me question my contributions as a programmer, and the orientation of our careers as time progresses.</p>
+        <h2 id="goal">Goal</h2>
+        <blockquote>
+        <p>I think a huge benefit of a technology such as the Internet is the democratization of information.</p>
+        </blockquote>
+        <p>Reflecting of what I’ve been doing for the last 9 years, I struggle to find ways in which I’ve contributed socially, through my expertise on the web as a platform. I expect that, as I’ve done, many of us spent many many years developing software for enterprises, forgetting what’s the real value of the web. Enterprise software is important for the enterprises, their products, and hoepfully their clients. However, those products are oriented towards profit, in an arena which’s primary purpose is not profit.</p>
+        <p>I think that it would be more profitable for humanity if more of us spent time on providing social value through the web, rather than focusing on increasing enterprise profits.</p>
+        <p>It seems to me that most people work for enterprises exclusively because it’s a good paying field, with a relative safety. Most people that I know of do not seem to enjoy this kind of work. You’ll also find people online that claim that many top-notch companies kill creativity and inspiration for employees. However,</p>
+        <blockquote>
+        <p>Disclaimer: of course making a living is a priority. Some of us are privileged enough to have the advantage of being able to think on how we can spend our time and our efforts creating something of value, <strong>while</strong> getting paid.</p>
+        </blockquote>
+        <p>What I want to come down to is that I believe we do not foster an environment of contribution well enough. We do not have societies of equal opportunities and many people do not have the chance to get creative and do what fulfills them. This is a hude waste and I feel like the side effects are immeasurable. I cannot fathom the rate of progress if we had an environment were more people could use their talents.</p>
+        <p>So, coming back to the web, I think the web is an environment in which, by design, is easier to provide equality of opportunity. I learnt how to program and make a living out of the generosity of the web, as with probably hundreds of thousands of people across the globe. And as with people that created this environment, I feel that I have to contribute in improving it, thus contributing more actively to society through my expertise, and not work on enterprise software forever, just because “it pays well”.</p>
+        <p>This conversation that goes deeper to a point in which you have to speak about our whole socioeconomical system, information science and the role of technology in our lives. My conclusion is that I feel I should start prioritizing social value over monetary profit that does not nessacarily adhere to value. The system occasionally aligns business profit and social value, but that’s not always case.</p>
+        <p>I’m George and I’m trying to find a place to contribute from in the digital age.</p>
+        <p>This blog post is part of the internet.</p>
+        <p>Have a good day.</p>
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>

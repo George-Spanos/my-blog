@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trying out Vue/Nuxt - Impressions on my first meta-framework | George Spanos</title>
+    <meta name="description" content="Impressions and thoughts after trying Nuxt and Vue after 8 years of Angular development." />
+    <link rel="canonical" href="https://gspanos.tech/posts/trying-nuxt/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trying out Vue/Nuxt - Impressions on my first meta-framework" />
+    <meta property="og:description" content="Impressions and thoughts after trying Nuxt and Vue after 8 years of Angular development." />
+    <meta property="og:url" content="https://gspanos.tech/posts/trying-nuxt/" />
+    <meta property="og:image" content="https://gspanos.tech/og-image/trying-nuxt.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:published_time" content="2024-01-04" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="George Spanos" href="/rss.xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="theme-color" content="#1d1f21" />
+    <script>
+      // Apply the saved theme before first paint, so there is no flash.
+      (() => {
+        const stored = localStorage.getItem("theme");
+        const dark = stored
+          ? stored === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+        document.querySelector('meta[name="theme-color"]').content = dark
+          ? "#1d1f21"
+          : "#fafafa";
+      })();
+    </script>
+    <script defer data-domain="gspanos.tech" src="https://moby-it.com/js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-title" href="/">George Spanos</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/" aria-current="page">Blog</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="sun" aria-hidden="true"><use href="/icons.svg#sun" /></svg>
+          <svg class="moon" aria-hidden="true"><use href="/icons.svg#moon" /></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article>
+        <h1>Trying out Vue/Nuxt - Impressions on my first meta-framework</h1>
+        <p class="post-meta">
+          <time datetime="2024-01-04">4 January 2024</time>
+          &middot; <span class="tags">vuejs, nuxt, learning, angular, web dev</span>
+        </p>
+
+        <h2 id="working-with-angular">Working with Angular</h2>
+        <p>I come from a background of extensive development of Enterprise Applications with Angular. I’ve worked with Rx quite
+        a lot and have been a fan of <a href="https://eventmodeling.org/" rel="noopener noreferrer" target="_blank">Event Modeling</a> for quite some time. This is why I love the Browser as a platform to develop.</p>
+        <p>I also do not have any experience in meta-frameworks. To this day, I do not exactly understand where to draw the line between a full-stack framework and a meta-framework.</p>
+        <h2 id="exploring-alternatives">Exploring Alternatives</h2>
+        <p>I feel Angular is too complex for its own good. I think designing Front Ends reactively is extremely helpful, but it’s a choice you have to consciously make and not abide by because your tool says so.</p>
+        <p>I like the simplicity and straightforwardness of other frameworks like React and Solid.</p>
+        <p>I strongly believe that the Angular team <em>is</em> moving the framework to a certainly better spot but I’m simply too fed up personally. I feel it’s time to explore something new and while I love exploring server-side technologies as well - Go Gophers - I just cannot feel content unless I’m trying to paint pixels on a screen.</p>
+        <h2 id="but-why-not-react">But why not React?</h2>
+        <p>I’ve been using and teaching about React for more than three years I still don’t feel React is straightforward.</p>
+        <p>I’ve been seeing huge question marks above people’s heads whenever I try to explain to them what happens and how React works and it’s always quite frustrating. One of my most influential criteria on whether I’m going to spend time on a tool is how easily I can reason about it with people who are not familiar with it.</p>
+        <p>I’ve been a teacher for about 10 years and I learned to trust my ability to tell the difference when I either:</p>
+        <ol>
+        <li>Don’t explain something well because I lack familiarity with it and whether</li>
+        <li>Something is hard to explain because it’s complex.</li>
+        </ol>
+        <p>I feel that both Angular and React are too complex for their good and I’d much rather prefer to work with more intuitive tooling that’s closer to the web platform.</p>
+        <p><em>“People refer to Vue as simpler so I might as well give it a try”</em>, I thought. After all, people who write Vue very rarely whine about it.</p>
+        <h2 id="how-to-learn-anything-new">How to learn anything new</h2>
+        <p>Grabbing this chance, I’m going to briefly go over my pattern for learning anything new for the last couple of years is the following:</p>
+        <ol>
+        <li>Kickstart your journey with videos. Spend 2-3 days consuming popular content, googling and chat-GPTing on the tool. See how you feel about it.</li>
+        <li>Find some kind of “fundamentals” course. “Fundamentals” courses are an idea that I first stumbled upon on <a href="https://pluralsight.com" rel="noopener noreferrer" target="_blank">Pluralsight</a>. When putting the word “fundamentals” in the title, they usually mean:
+        <em>“Here’s a concise end-to-end description of the tool in about 6-8 hours on average.</em></li>
+        <li>And lastly the most important one - <strong>go through the whole of the documentation</strong>. Good tools might have good documentation. <strong>Great tools always have great documentation</strong>. It’s part of what makes the great.</li>
+        </ol>
+        <p>I can’t stress how much the last point has helped me. I’ve ended up saving tens if not hundreds of hours simply because I took the time to read everything the authors had to say about their tool, before jumping into creating any kind of app. Yes, you always need to create something with a new tool to grasp it but please, <strong>PLEASE</strong>, go through their documentation at least once. Go through all of it.</p>
+        <h2 id="study-results">Study Results</h2>
+        <p>I ended up reading enough that I got the <a href="https://certificates.dev/vuejs/certificates/9af879d0-da7f-4b72-a9da-6965d497b1c3" rel="noopener noreferrer" target="_blank">Vue Developer Certificate</a> just by reading the Docs and creating 2 sample apps in 3 days. After that, I pushed through to the <a href="https://masteringnuxt.com/" rel="noopener noreferrer" target="_blank">Mastering Nuxt</a> course. I’m quite proud of myself and feel I’ve learned useful stuff as well.</p>
+        <h2 id="what-is-a-meta-framework-after-all">What is a meta-framework after all?</h2>
+        <p>To be frank, I’m still not 100% sure. I’m not sure what goes to a dedicated backend service and what could live at the backend layer of a meta-framework. My understanding is that a meta-framework is here to help the browser render stuff more efficiently. Rendering appropriate data in efficient ways is still very much the primary responsibility of a meta-framework.</p>
+        <p>For example:</p>
+        <p>Let’s assume that a page requires a user list before rendering content. In a Single-Page Application environment, you would typically implement guards and custom loaders just so you fetch the data via client-side JavaScript.
+        In a meta-framework environment, you fetch your user list and then populate the HTML. Simple, traditional web behavior.</p>
+        <h2 id="thoughts-and-feelings-about-vue-and-nuxt">Thoughts and feelings about Vue and Nuxt</h2>
+        <p>Even though I’m fairly new to this toolset, I have to say I already feel rejuvenated. I feel that I’m not that far from Native DOM while having the ease of use of the component-based frameworks without the complexity of the tooling.</p>
+        <p>As a developer, I like my pickaxes and shovels. I very much enjoy working with more primitive tools, building up my productivity toolkit for each project and then increasing my development velocity. ES6 has come a long way but it’s still quite cumbersome to create complex component-based UIs vanilla. I try for at least one project per year, and it’s still not a pleasant experience for me.</p>
+        <p>So at the end of the day, I have to give credit where credit is due. <strong>You can do amazing stuff with Nuxt</strong> (as well as Next I’m going to guess) <strong>in extremely efficient ways</strong> when compared to a traditional CRUD backend with a SPA project.</p>
+        <p>The developer experience is simply amazing to the point in which I believe people will deliver more meaningful software with those tools. And I’m not saying this lightly.</p>
+        <p>While I don’t agree with all that <a href="https://twitter.com/t3dotgg?lang=en" rel="noopener noreferrer" target="_blank">Theo</a> says, I think there’s merit to his thesis when he speaks about modern tools, platforms and developer productivity.</p>
+        <p>George Spanos,</p>
+        <p><a href="https://moby-it.com/" rel="noopener noreferrer" target="_blank">Moby IT</a></p>
+
+        <div class="socials">
+          <p>Find me on</p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/george-spanos/" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#linkedin" /></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/George-Spanos" target="_blank" rel="noopener noreferrer">
+                <svg aria-hidden="true"><use href="/icons.svg#github" /></svg>
+                <span class="visually-hidden">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gspanos@moby-it.com" rel="me">
+                <svg aria-hidden="true"><use href="/icons.svg#email" /></svg>
+                <span class="visually-hidden">email</span>
+              </a>
+            </li>
+            <li>
+              <a href="/rss.xml">
+                <svg aria-hidden="true"><use href="/icons.svg#rss" /></svg>
+                <span class="visually-hidden">rss</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div>Copyright &copy; 2026 George Spanos</div>
+      <nav aria-label="More on this site">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </footer>
+
+    <script src="/theme.js"></script>
+  </body>
+</html>
